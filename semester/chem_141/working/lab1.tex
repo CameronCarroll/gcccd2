@@ -1,0 +1,132 @@
+% Chem 141 Lab 1
+% Cameron Carroll
+
+
+\documentclass[fleqn,titlepage]{article}
+
+\renewcommand*\rmdefault{ppl}
+
+\usepackage[version=3]{mhchem} % Package for chemical equation typesetting
+\usepackage{tabularx}
+\usepackage{wasysym}
+\usepackage{listings}
+\lstset{language=Matlab}
+
+% set 1" margins on 8.5" x 11" paper
+% top left is measured from 1", 1"
+\topmargin 0in
+\oddsidemargin 0in
+\evensidemargin 0in
+\headheight 0in
+\headsep 0in
+\topskip 0in
+\textheight 9in
+\textwidth 6.5in
+
+\usepackage{graphicx} % Required for the inclusion of images
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} % Make numbering in the enumerate environment by letter rather than number (e.g. section 6)
+
+%\usepackage{times} % Uncomment to use the Times New Roman font
+
+%----------------------------------------------------------------------------------------
+% DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{titlepage}
+  \mbox{}\\[1.25cm]
+  \textbf{\LARGE Cameron Carroll \\ Grossmont College}\\[2.25cm]
+  \begin{center}
+    \textbf{\huge Experiment 1: \\ Measuring Density with Different Types of Glassware}\\[2.50cm]
+  \end{center}
+  \textbf{\LARGE Professor: Martin Larter \\ Chemistry 141-0692}
+  \vfill
+  \center{\textbf{\LARGE Performed --} {\LARGE January 30 and February 4, 2014}}
+  \center{\textbf{\LARGE Submitted --} {\LARGE February 11, 2014}}
+\end{titlepage}
+
+%----------------------------------------------------------------------------------------
+% SECTION 1
+%----------------------------------------------------------------------------------------
+\pagebreak
+\newpage
+
+\section{Guidelines}
+  \begin{itemize}
+    \item Sample calculations:
+      \begin{itemize}
+        \item liquid delivered
+        \item average
+        \item deviation
+        \item stdev
+        \item 3 ranges
+        \item percent error
+        \item density
+        \item uncertainty: beaker is +- 1 mL, graduated cylinder is .01 and pipet is .01
+      \end{itemize}
+    \item Summary Table:
+      \begin{itemize}
+        \item Original data: fulls, empties, volume delivered, means, standard deviation, percent error, first three stdev ranges, temperature, 
+      \end{itemize}
+    \item True values are in GRAMS! multiply 10ml by the density.
+    \item limited by the least precise instrument. which is determined largely by technique, between grad and pipet at least.
+    \item Introduction: Definition of accuracy/precision (IN FLOWING PROSE) -- three types of errors (random, systematic, gross) -- defifnitions: mean, medan, spread/range, deviation, stdev (basically shows you the spread of random error around the mean) -- give formulas and define the variables -- explain WHY stdev (measure of unavoidable error) -- state why this experiment will achieve the object (well we know true values and we know how close we come so our multiple trials show a spread of numbers and show how repeatable the procedure is.)
+    \item Procedure reference: Add own procedure used for coke/diet coke portion. 
+    \item Discussion: Make an introduction and use data to support argument. It's like an essay! -- Consider possibility on nonrandom or systematic errors. (Which method and source if so.) -- Compare precision using stdev, compare to sig figs
+    \item Discussion part B: Explain how you chose glassware; Look up Coke/Det Coke, discuss accuracy/precision of data. Does data support that diet coke floats, coke sinks? coke: 39g sugar... diet: aspertane is sweeter so you would probably use less of it. ---> less mass per volume ---> lower density? 
+  \end{itemize}
+\section{Objective}
+  \paragraph{} This experiment is intended to demonstrate precision and accuracy in some common laboratory instruments. These values are determined by measuring the mass of water delivered, which are then used to decide on the proper instrument for measuring density most effectively. Finally, the density of coke and diet coke are determined experimentally and the precision/accuracy analyzed again.
+
+%----------------------------------------------------------------------------------------
+% SECTION 2
+%----------------------------------------------------------------------------------------
+\newpage
+\section{Introduction}
+  \paragraph{} One of the most important parts of laboratory work is managing errors in the data. Unless care is taken, these errors can quickly snowball to nullify experimental efforts and conclusions. Error analysis can also indicate problems with the experiment: Either complete catastrophic failure or consistently bad technique.
+  \paragraph{} There are two measures of error that we will consider: precision and accuracy. Precision is an indication of repeatability in measurement while accuracy shows how far from the true value our experimental value is. Further, there are three types of error: systematic, gross, and random. Systematic error is the one that indicates bad technique: precision may be fair, but accuracy is poor. (Values are offset in a particular direction.)
+  Gross error indicates a serious, unrecoverable mistake. Finally, random error is an unavoidable consequence of the precision of instruments used.
+  \paragraph{} We will use some basic statistical tools in this and later analyses. Among these are the percent error, used to find average distance from true value;
+  \begin{center}$\text{percent error} = (100\%)
+    \frac{\text{measured\ value} - \text{theoretical\ value}}{theoretical\ value}$\end{center}
+  Arithmetic mean, which measures the common average;
+  \begin{center}$\text{mean}=\frac{1}{n}\sum\limits_{i=1}^n a_i$\end{center} where $n$ is the number of elements and $a_i$ is the current element.
+  The median, which denotes the middle value in the set. (The probability that any value of the set is larger or smaller is 1/2.);
+  \begin{center}$P(X \le m) \ge 0.5$ and $P(X \ge m) \ge 0.5$\end{center} where X is any datum and m is the median.
+  The spread, which represents scattering in the data. The simplest and probably least effective measure of spread is the range, which is simply the difference between the largest and smallest elements.
+  \begin{center}$\text{range} = \text{largest datum} - \text{smallest datum}$\end{center}
+  The deviation, or distance from the average; And finally standard deviation, which is a measure of precision quantifying how the data are offset relative to the average. 
+ \begin{center}$\text{standard deviation} = \sigma = 
+  \sqrt{\frac{\Sigma (x-\bar{x})^2}{n-1}}$\end{center}
+Standard deviation is used rather than significant figures to determine precision because technique plays a large part in the uncertainty of the measurement, which significant figures fail to capture.
+  \paragraph{}
+%----------------------------------------------------------------------------------------
+% SECTION 3
+%----------------------------------------------------------------------------------------
+\newpage
+\section{Procedure}
+
+
+%----------------------------------------------------------------------------------------
+% SECTION 4
+%----------------------------------------------------------------------------------------
+\newpage
+\section{Results \& Calculations}
+
+%----------------------------------------------------------------------------------------
+% SECTION 5
+%----------------------------------------------------------------------------------------
+\newpage
+\section{Discussion}
+
+%----------------------------------------------------------------------------------------
+% SECTION 6
+%----------------------------------------------------------------------------------------
+\newpage
+\section{Discussion}
+
+\end{document}

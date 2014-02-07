@@ -1,0 +1,77 @@
+\documentclass[10pt,letterpaper]{report}
+\usepackage[pdftex]{graphicx}
+\usepackage{textgreek}
+\usepackage{fixltx2e}
+\usepackage{tabularx}
+\usepackage{hyperref}
+
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\setlength{\topmargin}{-.7in}
+\setlength{\leftmargin}{-.7in}
+\setlength{\textheight}{9in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\textwidth}{6.25in}
+\newcommand{\degree}{\ensuremath{^\circ}}
+\setlength{\extrarowheight}{2pt}
+
+
+\begin{document}
+
+\input{./lab1_cover_sheet.tex}
+\pagebreak
+
+\section*{Summary}
+
+\begin{tabular}{ | c | c | c | c | c | c | c | c | c | c | c | c | }
+\hline
+Trial & \textDelta T & \textsigma\textsubscript{\textDelta T} & L & \textsigma\textsubscript{L} &
+\textDelta L & \textsigma\textsubscript{\textDelta L} & \textalpha\textsubscript{calc} ($10^{-6}$) &
+\textsigma\textsubscript{\textalpha} ($10^{-6}$) & \textalpha\textsubscript{diff} \footnotemark   \\
+\hline
+1: & 76.4 c\degree & 0.2 c\degree & 59.8 cm & 0.1 cm & 0.090 cm & 0.002 cm & 19.8 $(c^{\circ (-1)})$ &
+0.444 $(c^{\circ (-1)})$ & 3.2 $(c^{\circ (-1)})$   \\
+\hline
+2: & 72.0 c\degree & 0.2 c\degree & 59.7 cm & 0.1 cm & 0.101 cm & 0.002 cm & 23.5 $(c^{\circ (-1)})$ & 
+0.472 $(c^{\circ (-1)})$ & 0.5 $(c^{\circ (-1)})$ \\
+\hline
+3: & 71.1 c\degree & 0.2 c\degree & 59.8 cm & 0.1 cm & 0.098 cm & 0.002 cm & 23.1 $(c^{\circ (-1)})$ &
+0.477 $(c^{\circ (-1)})$ & 0.1 $(c^{\circ (-1)})$ \\
+\hline
+\end{tabular} \\
+\\
+$^1$ $\alpha_{difference} = |\alpha_{calculated} - \alpha_{reference}|$  and $\alpha_{reference} = 23.0$ \\
+$^2$ Material used: Aluminum \\
+$^3$ $\alpha_{reference}$ from \url{http://www.engineeringtoolbox.com/linear-thermal-expansion-d_1379.html} \\ 
+
+\section*{Conclusions}
+\paragraph*{}
+	 We used a steam generator and jacket to expose a metal rod to steam and allowed it to heat up until linear expansion was done. By measuring the size of expansion, temperature rise and original length, we determined the coefficient of linear thermal expansion for aluminum. \\
+	 \\
+	The calculated coefficients of expansion for two of three trials, ($\alpha_{2} = 23.5 \pm 0.472 c^{\circ (-1)} $ and $\alpha_{3} = 23.1 \pm 0.477 c^{\circ (-1)} $,) were within a reasonable range of the reference value $\alpha_{ref} = 23.0$... although only the third trial was within the allowed error boundary. The first trial demonstrates poor accuracy ($\alpha_{diff} = 3.2$) and poor precision ($\alpha_2 - \alpha_1 = 3.7$.) The second and third trials have fair precision, and are within the other's boundary of uncertainty. 
+	($23.5 - 0.472 < 23.1$ and $ 23.1 + 0.477 > 23.5$.) Only the last trial has fair accuracy, with the reference value within its error boundary. ($23.1 - 23.0 = 0.1$; $0.1 < 0.477.$)
+	The first and second trials do not fall within the range of uncertainty, which is indicative of systematic error. \\
+	\\
+	The uncertainties for length and change-of-length ($\sigma_L$ = 0.1 cm; $\sigma_{\Delta L}$ = 0.02 mm = 0.002 cm) come from being unable to accurately read the instruments (a meter stick and dial gauge) accurately. The value for $\sigma_{\Delta T} = 0.1 ^\circ c$ is assumed, since the thermometer is digital. The largest contribution to $\sigma_\alpha$ comes from the uncertainty for $\Delta_L$ with a ratio of ~0.02 compared to $~0.0026 / ~0.0016$ for $\sigma_T$ and $\sigma_{\Delta_T}$ respectively. \\
+	\\
+	There are a few more possible sources of error that we have no numerical estimate for: The thermometer probe, steam jacket, and uneven heat distribution. In the first \& second case, the thermometer probe is placed inside of an opening in the steam jacket; There is a possibility that the direct heat from the steam or radiating heat from the jacket raise the probe temperature, and the possibility that the probe is touching the steam jacket. In the third consideration, the heat is applied to one end of the expanding rod and allowed to propagate through the jacket. In this way, one end of the rod may have expanded more fully than the other, giving an inaccurate coefficient of expansion.
+	
+\newpage
+
+\section*{Sample Calculations \& Results:}
+\subsection*{\textDelta T:}
+$\Delta T = T_2 - T_1 = 98.8 ^\circ c - 22.4 ^\circ c = 76.4 c ^\circ$ \\
+$\sigma_{\Delta T} = \Delta T_{maximum} - \Delta T = (T_{2, max} - T_{1, min}) - \Delta T = 
+(98.8 + 0.1 ^\circ c - (22.4 - 0.1 ^\circ c)) - 76.4 ^\circ c = 0.2 c ^\circ$ \\ [-0.65em]
+\subsection*{\textDelta L:}
+$\Delta L = X_2 - X_1 = 0.90 mm - 0.00 mm = 0.90 mm = 0.09 cm$ \\
+$\sigma_{\Delta L} = \Delta L_{max} - \Delta L = (X_{2, max} - X_{1, min}) - \Delta L = 
+(1.01 + 0.01 mm - (0.00 - 0.01 mm)) - 0.90 mm = 0.02 mm = 0.002 cm $ \\ [-0.65em]
+\subsection*{\textalpha\textsubscript{Aluminum}:}
+$\alpha = \frac{\Delta L}{L_0 \cdot \Delta T} = \frac{0.09 cm}{59.8 cm \cdot 76.4 c^\circ} = 23.5 (10^{-6}) (c^{\circ (-1)}) $ \\
+$\sigma_{\alpha} = \alpha \cdot \sqrt{(\frac{\sigma_L^2}{L^2} + \frac{\sigma_{\Delta L}^2}{\Delta L^2} +
+ \frac{\sigma_{\Delta T}^2}{\Delta T^2})} = 19.8 \cdot \sqrt{(\frac{0.01^2}{59.8^2} + \frac{0.002^2}{0.09^2} +
+ \frac{0.2^2}{76.4^2})} = 0.444$
+
+
+\end{document}

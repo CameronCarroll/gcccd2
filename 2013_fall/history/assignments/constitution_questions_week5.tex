@@ -1,0 +1,226 @@
+% NOTE: Edited \homeworkProblemName command to stop problem number from being in header.
+%\begin{homeworkProblem}[Exercise \#\arabic{homeworkProblemCounter}] % Custom section title
+
+\documentclass{article}
+
+\usepackage{fancyhdr} % Required for custom headers
+\usepackage{lastpage} % Required to determine the last page for the footer
+\usepackage{extramarks} % Required for headers and footers
+\usepackage{graphicx} % Required to insert images
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+ 
+% Margins
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in 
+
+\linespread{1.1} % Line spacing
+
+% Set up the header and footer
+\pagestyle{fancy}
+\lhead{\hmwkAuthorName} % Top left header
+\chead{\hmwkClass\ (\hmwkClassInstructor\ \hmwkClassTime): \hmwkTitle} % Top center header
+\rhead{\firstxmark} % Top right header
+\lfoot{\lastxmark} % Bottom left footer
+\cfoot{} % Bottom center footer
+\rfoot{Page\ \thepage\ of\ \pageref{LastPage}} % Bottom right footer
+\renewcommand\headrulewidth{0.4pt} % Size of the header rule
+\renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+%----------------------------------------------------------------------------------------
+% DOCUMENT STRUCTURE COMMANDS
+% Skip this unless you know what you're doing
+%----------------------------------------------------------------------------------------
+
+% Header and footer for when a page split occurs within a problem environment
+\newcommand{\enterProblemHeader}[1]{
+\nobreak\extramarks{#1}{#1 continued on next page\ldots}\nobreak
+\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak
+}
+
+% Header and footer for when a page split occurs between problem environments
+\newcommand{\exitProblemHeader}[1]{
+\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak
+\nobreak\extramarks{#1}{}\nobreak
+}
+
+\setcounter{secnumdepth}{0} % Removes default section numbers
+\newcounter{homeworkProblemCounter} % Creates a counter to keep track of the number of problems
+
+\newcommand{\homeworkProblemName}{}
+\newenvironment{homeworkProblem}[1][Problem \arabic{homeworkProblemCounter}]{ % Makes a new environment called homeworkProblem which takes 1 argument (custom name) but the default is "Problem #"
+\stepcounter{homeworkProblemCounter} % Increase counter for number of problems
+\renewcommand{\homeworkProblemName}{#1} % Assign \homeworkProblemName the name of the problem
+\section{\homeworkProblemName} % Make a section in the document with the custom problem count
+% \enterProblemHeader{\homeworkProblemName} % Header and footer within the environment
+}{
+% \exitProblemHeader{\homeworkProblemName} % Header and footer after the environment
+}
+
+\newcommand{\problemAnswer}[1]{ % Defines the problem answer command with the content as the only argument
+\noindent\framebox[\columnwidth][c]{\begin{minipage}{0.98\columnwidth}#1\end{minipage}} % Makes the box around the problem answer and puts the content inside
+}
+
+\newcommand{\homeworkSectionName}{}
+\newenvironment{homeworkSection}[1]{ % New environment for sections within homework problems, takes 1 argument - the name of the section
+\renewcommand{\homeworkSectionName}{#1} % Assign \homeworkSectionName to the name of the section from the environment argument
+\subsection{\homeworkSectionName} % Make a subsection with the custom name of the subsection
+\enterProblemHeader{\homeworkProblemName\ [\homeworkSectionName]} % Header and footer within the environment
+}{
+\enterProblemHeader{\homeworkProblemName} % Header and footer after the environment
+}
+   
+%----------------------------------------------------------------------------------------
+% NAME AND CLASS SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\hmwkTitle}{Constitution Quiz 5} % Assignment title
+\newcommand{\hmwkDueDate}{Monday,\ October\ 14,\ 2013} % Due date
+\newcommand{\hmwkClass}{HIST\ 108} % Course/class
+\newcommand{\hmwkClassTime}{11:00 am} % Class/lecture time
+\newcommand{\hmwkClassInstructor}{Campbell} % Teacher/lecturer
+\newcommand{\hmwkAuthorName}{Cameron Carroll} % Your name
+
+%----------------------------------------------------------------------------------------
+% TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title{
+\vspace{2in}
+\textmd{\textbf{Early American History}}\\
+\includegraphics[width=5cm]{cuyam_logo}\\
+\textmd{\textbf{\hmwkTitle}}\\
+\normalsize\vspace{0.1in}\small{Due\ on\ \hmwkDueDate}\\
+\vspace{0.1in}\large{\textit{\hmwkClassInstructor\ \hmwkClassTime}}
+\vspace{2in}
+}
+
+\author{\textbf{\hmwkAuthorName}}
+\date{} % Insert date here if you want it to appear below your name
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle
+\newpage
+
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+% Question 1
+%----------------------------------------------------------------------------------------
+
+\begin{homeworkProblem}[Question \#\arabic{homeworkProblemCounter}] % Custom section title
+  What does the consitution do? \\[0.2cm]
+  \problemAnswer{
+    \begin{enumerate}
+      \item Historically, the constitution was established by the `founding fathers' to set up the United States government, delegates certain limited powers to the federal government, and protects the rights of the governed.
+      \item The constitution doesn't `give you' your rights; Our founders considered these to be natural or `god given' rights. The constitution is intended to protect these rights by limiting the power of the federal government to those allowed by the costitution, and by enumerating certain retained rights.
+      \item The constitution only has its bill of rights thanks to the efforts of the `anti-federalists' of the Constitutional Convention, whose interests included this bill and also reducing federal power. The `federalists,' on the other hand and somewhat obviously, supported federal power They argued that explicitly enumerating rights will lead to inconsistency, and that separation of power into individual branches would already protect the rights of the people.
+    \end{enumerate}
+  }
+\end{homeworkProblem}
+\clearpage
+
+%----------------------------------------------------------------------------------------
+% Question 2
+%----------------------------------------------------------------------------------------
+
+\begin{homeworkProblem}[Question \#\arabic{homeworkProblemCounter}] % Custom section title
+  What are the two parts of congress? \\[0.2cm]
+  \problemAnswer{
+    \begin{enumerate}
+      \item The U.S. Congress is a bicameral legislature, which is a legislature representative of different `estates of the realm.' (Aristocracy vs Commoners, for example.)
+      \item One of the ideas of bicameralism is that the Senate should be a counterweight to, as Madison put it, the `fickleness and passion' of the lower House. Further, `use of the Senate is to consist in its proceeding with more coolness, with more system and with more wisdom, than the popular branch.' Essentially, the elites were untrusting of pure popular rule, thinking the uneducated washes unfit to elect their ruler.
+      \item Bicameralism was also considered to balance power between states; If members of Congress were allocated purely on the basis of a population fraction, states with low populations would have a clear disadvantage.
+      \item The two parts of congress, under this system, are the Senate and House of Representatives. The House is populated based on the number of constituents in each state while the Senate is populated equally for each state.
+      \item It's interesting to note that the government is set up to consider not only the rights and concerns of the people, but also the rights of the States themselves.
+    \end{enumerate}
+  }
+\end{homeworkProblem}
+\clearpage
+
+%----------------------------------------------------------------------------------------
+% Question 3
+%----------------------------------------------------------------------------------------
+
+\begin{homeworkProblem}[Question \#\arabic{homeworkProblemCounter}] % Custom section title
+  Name the war between the North and South. What were the other names that these two sides were known by? \\[0.2cm]
+  \problemAnswer{
+    \begin{enumerate}
+      \item The war between North and South was the American Civil War, fought from 1861-1865. 
+      \item Started after several Southern slave states declared their secession and formed the `Confederate States of America,' the `Confederacy,' or just the `South.' \\[0.2cm]
+      \textbf{Other issues contributing to secession:}
+      \item States' Rights (Southerners thought they should be allowed to take slaves, protected under their State's rights, anywhere else;)
+      \item Sectionalism (Loyalty to ones own region rather than country as a whole; A dichotomy between economies, ideals, customs forms between North and South; Religions split; Most people moved into the North;)
+      \item Protectionism (Economic policy of restraining trade between US and other nations; Was an attempt to restrain imports to protect Northern industry; Was opposed by Southerners with interests in agricultural exports.)
+      \item States which didn't secede were known as the `Union' or the `North.'
+      \item Estimated 750,000 people died before Confederacy and Slavery were abolished and the Reconstruction Era began.
+    \end{enumerate}
+  }
+\end{homeworkProblem}
+\clearpage
+
+%----------------------------------------------------------------------------------------
+% Question 4
+%----------------------------------------------------------------------------------------
+
+\begin{homeworkProblem}[Question \#\arabic{homeworkProblemCounter}] % Custom section title
+  Name two US territories. \\[0.2cm]
+  \problemAnswer{
+    \begin{enumerate}
+      \item Territories are a political division directly overseen by our federal government, rather than sharing soverignty with it.
+      \item Created to govern newly acquired land while borders were still evolving.
+      \item Territories can either be incorporated (part of the US; Constitution applies) or unincorporated (having their own government.)
+      \item However, Congress has extended citizenship rights to all inhabited territories except the American Samoa, meaning that these citizens can run for office or vote. American Samoans are U.S. nationals, but not U.S. citizens; They cannot vote or hold office outside of American Samoa. \\[0.2cm]
+    \end{enumerate}
+    \textbf{List of Territories:}
+    \begin{enumerate}
+      \item American Samoa
+      \item Northern Mariana Islands
+      \item Guam
+      \item Puerto Rico
+      \item U.S. Virgin Islands \\[0.2cm]
+      \textbf{(Minor Outlying Islands)}
+      \item Baja Nuevo Bank
+      \item Baker Island
+      \item Howland Island
+      \item Jarvis Island
+      \item Johnston Atoll
+      \item Kingman Reef
+      \item Midway Islands
+      \item Navassa Islands
+      \item Palmyra Atoll
+      \item Serranilla Bank
+      \item Wake Island
+    \end{enumerate}
+  }
+\end{homeworkProblem}
+\clearpage
+
+%----------------------------------------------------------------------------------------
+% Question 5
+%----------------------------------------------------------------------------------------
+
+\begin{homeworkProblem}[Question \#\arabic{homeworkProblemCounter}] % Custom section title
+  Name two wars fought by the US in the 1800s. \\[0.2cm]
+  \problemAnswer{
+    \begin{enumerate}
+      \item Ranges from the Quasi War (Undeclared sea war against France) to the Boxer Rebellion (America and Friends against China) / Phillipine-American War (Filipino revolutionaries trying to secure independence from United States, who gained the area from the Spanish-American War.)
+      \item American military efforts in the 1800's include numerous wars and battles against native tribes across the country, as well as the `big name' wars. \\[0.2cm]
+      \textbf{(Interesting Examples)}
+      \item Aegan Anti-Piracy Operations: Around 1825, the Aegean had become a haven for piracy and privateers; After a few American ships were sunk, President Monroe deployed sloops and schooners as part of the Mediterranian Squadron. The Squadron has a few skirmishes and victories; After three years the operation is considered a success. (UK, Russia and France had also deployed their own anti-piracy efforts to the Aegean area.) (There were also the West Indies Anti-Piracy Ops, and the African Anti-Slavery Ops.)
+      \item Korean Expedition, or `The Shinmiyangyo:' The United States came to Korea on a diplomatic mission to establish trade and political relations; Korean Shore batteries attacked American warships, and the Americans respond with a `punitive expedition.' The expedition only results in continued Korean isolationism and American withdrawl.
+    \end{enumerate}
+  }
+\end{homeworkProblem}
+\clearpage
+
+
+\end{document}
+

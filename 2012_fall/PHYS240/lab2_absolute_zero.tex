@@ -1,0 +1,42 @@
+\documentclass[11pt,letterpaper]{report}
+\usepackage[pdftex]{graphicx}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\setlength{\topmargin}{-.7in}
+\setlength{\leftmargin}{-.7in}
+\setlength{\textheight}{9in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\textwidth}{6.25in}
+
+
+\begin{document}
+
+\input{./lab2_cover_sheet.tex}
+\pagebreak
+
+\section*{Summary}
+\begin{tabular}{ | c | c | }
+\hline
+Description of Data Set & Temperature of Absolute Zero \\
+\hline
+Trial 1 (w/ room temperature) & ~17 K by graph  \\
+Trial 2 (w/ cooler water) &  ~25 K by graph \\
+\hline
+\end{tabular}
+
+
+\section*{Conclusions}
+\paragraph{}
+We used a constant-volume pressure vessel to determine a pressure-temperature relationship by placing the vessel in solutions at various temperatures. At constant volume, pressure and temperature are found to be proportional; We made a range of measurements and did a linear extrapolation to determine an approximate temperature for $P = 0$. When $P = 0$ then the temperature is taken to be $T = 0$, yielding a value for absolute zero.
+\paragraph{}
+The graph for the first trial (See Fig. 1) appears to have good form, with the maximum and minimum value at equal distances on either side. This trial determined the value of absolute zero to be approximately 17 K, and the uncertainty provided by the error bars is approximately 15 K, excluding the true value from this data set. The second trial, with a value of roughly 25 K, barely incorporates the true value of absolute zero within its lower bound. The uncertainty here appears to be close to 25 K for the lower bound after extrapolation, and 20 K for the upper bound. These uncertainties were approximated from figures 1 and 2. Each data set appears to be consistent in terms of linearity, as expected by the ideal gas law.
+\paragraph{}
+The pressure vessels are known to be calibrated somewhat poorly, and we were advised to normalize the pressure between the pressure vessel's idea of 'room pressure' and the barometer's idea. The difference between the two, however, was around 0.004 bar, and so we chose not to normalize our values. The thermometer, on the other hand, /emph{was} poorly calibrated as we couldn't consistently measure boiling water higher than 99.1 $^\circ$C and so assigned temperature a full 1 degree of uncertainty.
+
+
+
+\section*{Discussion of Principles}
+The pressure of a gas upon a vessel comes from the force of the gas molecules hitting the side of the container. The kinetic theory of gases explains an (ideal) approximation of the real world and describes the effects that the motion of atoms has. Because both temperature and pressure arise from motion of the atoms, bringing either value to zero implies that there is no kinetic activity. Therefore by extrapolating upon a trend defined by measurements of the real world, we can approximate the behavior of a gas at this level of stillness. Following this trend until the pressure reaches zero yields a temperature that is defined as "absolute zero."
+
+
+\end{document}

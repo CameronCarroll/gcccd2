@@ -1,0 +1,116 @@
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage{ifpdf}
+\usepackage{mla}
+\usepackage[american]{babel}
+\usepackage{csquotes}
+\usepackage{setspace}
+\usepackage{url}
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+\makeatletter
+
+\tikzset{%
+  fancy quotes/.style={
+    text width=\fq@width pt,
+    align=justify,
+    inner sep=1em,
+    anchor=north west,
+    minimum width=\textwidth,
+  },
+  fancy quotes width/.initial={.8\textwidth},
+  fancy quotes marks/.style={
+    scale=8,
+    text=white,
+    inner sep=0pt,
+  },
+  fancy quotes opening/.style={
+    fancy quotes marks,
+  },
+  fancy quotes closing/.style={
+    fancy quotes marks,
+  },
+  fancy quotes background/.style={
+    show background rectangle,
+    inner frame xsep=0pt,
+    background rectangle/.style={
+      fill=gray!25,
+      rounded corners,
+    },
+  }
+}
+
+\newenvironment{fancyquotes}[1][]{%
+\noindent
+\tikzpicture[fancy quotes background]
+\node[fancy quotes opening,anchor=north west] (fq@ul) at (0,0) {``};
+\tikz@scan@one@point\pgfutil@firstofone(fq@ul.east)
+\pgfmathsetmacro{\fq@width}{\textwidth - 2*\pgf@x}
+\node[fancy quotes,#1] (fq@txt) at (fq@ul.north west) \bgroup}
+{\egroup;
+\node[overlay,fancy quotes closing,anchor=east] at (fq@txt.south east) {''};
+\endtikzpicture}
+
+\makeatother
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{spacing}{1.5}
+\begin{center}
+{\Large \bfseries
+Grossmont College}
+
+\vspace*{10mm}
+
+\includegraphics[width=5cm]{gc_crest}
+
+\vspace*{15mm}
+{\large Research Project --- \today
+}
+
+\vspace*{10mm}
+
+
+
+\LARGE Utterly Broken: Corruption and Environmental Mismanagement in the Energy Sector
+
+\vspace*{20mm}
+
+{\large \textsc{ Cameron Carroll}
+}
+
+\vspace*{20mm}
+
+\small{Instructor: \textsc{Stephanie Mood}}
+
+\end{center}
+\end{spacing}
+
+\newpage
+\setcounter{page}{1}
+
+
+\include{planet_earth_draft2}
+
+\newpage
+\thispagestyle{empty}
+
+\begin{mla}{Cameron}{Carroll}{Prof. Mood}{English 124}{\today}{Reflection (Planet Earth)}
+\begin{itemize}
+\item For this paper, I took a new approach to research; Usually, I would simply start coming up with ideas, writing about those ideas, and then trying to find sources to back up my claims. In this case, I found that it's infinitely easier to spend a lot of time gathering data, a long time thinking about how to synthesize that data, and then actually writing about it takes practically no time at all. I regret not having an entire semester to devote to researching this topic, because it is very interesting and the scope I chose turned out to be far too broad to really get a handle on in a few weeks. 
+\item The peer review wasn't that helpful; I got a little bit of advice on my introduction, but most of the paper didn't exist and I already had my direction. 
+\item I feel that this paper is ambitious, but it's just not good enough. I already tore out one of the topics (nuclear power) for lack of time, but even to adequately survey the two remaining regions (Middle East \& China) would take a long, long time. I understand, now, the purpose of these think-tanks.
+\item I don't think that my thinking has changed, particularly, but I think my pre-writing process has grown a bit. I'm really sad that there's not more time, though, because I'm not even anywhere close to done.
+\end{itemize}
+\end{mla}
+
+\newpage
+\thispagestyle{empty}
+
+\begin{mla}{Cameron}{Carroll}{Prof. Mood}{English 124}{\today}{Rhetorical Precis (Planet Earth)}
+\begin{itemize}
+\item Glenn Zorpette's 2011 article, ``Reengineering Afghanistan,'' explains how foreign influence and domestic pressure has led to a fractured energy infrastructure, poor energy production and continued failure. Zorpette supports his explanation using a first-hand account from both Iraq and Afghanistan, touring various power production and infrastructure facilities, as well as interviewing experts from the region. The author intends to illustrate the extensive corruption and mismanagement prevalent in American energy infrastructure efforts in Afghanistan. The intended audience is technical, and the article was published in the magazine of the Institute for Electrical and Electronic Engineers. 
+\end{itemize}
+\end{mla}
+\end{document}

@@ -1,0 +1,135 @@
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage{ifpdf}
+\usepackage{fullpage}
+\usepackage{textcomp}
+
+\newcommand{\squishlist}{
+ \begin{list}{$\bullet$}
+  { \setlength{\itemsep}{0pt}
+     \setlength{\parsep}{3pt}
+     \setlength{\topsep}{3pt}
+     \setlength{\partopsep}{0pt}
+     \setlength{\leftmargin}{1.5em}
+     \setlength{\labelwidth}{1em}
+     \setlength{\labelsep}{0.5em} } }
+
+\newcommand{\squishend}{
+  \end{list}  }
+
+\begin{document}
+\title{AI Notes}
+\author{Cameron Carroll}
+\maketitle
+
+\tableofcontents
+\vspace{1cm}
+\hrule
+
+\section{Agent \& Environment}
+
+\subsection{Definitions}
+\paragraph{Partially \& Fully Observable}
+An environment is fully observable if the agent can see everything pertinent to its interests and there are no hidden obstructions. A partially observable environment, on the other hand, is one in which an agent cannot sense everything, at least at the same time. The latter may require internal data stores to keep track of previous states.
+
+\paragraph{Competition \& Cooperation}
+A multiagent environment is either a competitive environment, where all agents are increasing their own performance at the expense of another. In a cooperative environment, agents all work together to avoid such performance losses. (Avoiding collisions, for example.)
+
+\paragraph{Deterministic \& Stochastic}
+A deterministic environment is one in which the next state is completely deterined by the current state and the action. A stochastic environment is one in which the next state is also subject to outside events.
+
+\paragraph{Episodic vs Sequential}
+In an episodic task environment, the details of previous episodes do not factor into the decision regarding the current episode. Contrary to this, sequential task environments do consider previous decisions. (One big episode, essentially.)
+
+\paragraph{Static \& Dynamic}
+An environment that does not change while an agent is making decisions is static. On the contrary, a dynamic environment are constantly changing and, by changing state they are 'asking' for an updated result. (State + Action = Result)
+An environment can be semidynamic, such as chess played with a clock.
+
+\paragraph{Continuous vs Discrete}
+A continuous environment is not bounded, whereas a discerete environment is. For example, driving 'sweeps' through a range of continuous values smoothly over time, and is therefore a continuous environment. Playing chess, on the other hand, one has finite states and actions and it is therefore a discrete environment.
+
+\paragraph{Known vs Unknown}
+This refers not to the knowledge of the environment, but rather knowledge of the rules of the environment. For example, the laws of chess or the laws of physics might apply.
+
+
+
+\section{Searching}
+
+\subsection{Search Algorithms}
+\paragraph{Tree Search}
+\squishlist
+\item Initialize frontier set with the initial state data. 
+\item In a loop, do the following: \\[-.3cm]
+\squishlist
+\item Check that the frontier is not empty; If it is, break. \\[-.3cm]
+\item If frontier has data, use the choice algorithm to select a path to remove from frontier. \\[-.3cm]
+\item Check the new state against the goal list, and return that path if so. \\[-.3cm]
+\item If not a goal state, add the new 'explored' path to the frontier. \\[-.3cm]
+\squishend
+\squishend
+
+\paragraph{Graph Search}
+\squishlist
+\item A graph search is an expansion upon the tree search. \\[-.3cm]
+\item Initialize an explored set along with the frontier set to keep track of previous states. \\[-.3cm]
+\item When considering path as a goal, add it to the list of explored states. \\[-.3cm]
+\item When adding the paths back onto frontier, do not add that path if it already exists in either the frontier or explored sets.
+\squishend
+
+
+\subsection{Selection Algorithms}
+\paragraph{Breadth-First Search}
+Always selects a path from the frontier that is the shortest. This algorithm is guaranteed to find the solution in the shortest number of steps, but not necessarily the overall cost. This algorithm is optimal.
+
+\paragraph{Uniform Cost Search}
+Selects the cheapest path from the frontier, considering all the steps to get there. This algorithm is also optimal.
+
+\paragraph{Depth-First Search}
+Opts to expand the longest paths first, and has a great advantage in situations where the explored state cannot necessarily be stored. This algorithm is not, however, optimal.
+
+\paragraph{Greedy Best-First Search}
+Expands a small number of nodes, but accepts a path longer than others; This search is directed towards a goal, rather than outwards.
+
+\paragraph{A* Search}
+$f = g + h$; \\ 
+g(path) = path cost; \\
+h(path) = h(state) = estimated distance to goal. \\
+The A* search considers both the path cost so far, which keeps the search short, as well as the average distance to goal, keeping the search focused. \\
+The A* algorithm finds the lowest path cost if h(s) $=<$ true cost, is optimistic, and never overestimates.
+
+
+
+\section{Probability}
+
+\paragraph{Bayes Rule (Pretty Version)}
+$P(A|B) = \frac{P(B|A)\cdot P(A)}{P(B)}$
+
+\paragraph{Bayes Rule (Multiple Variable Pretty Version)}
+$ P(A|X_{1},X_{2}...,X_{n}) = \frac{P(A)\cdot P(X_{1},X_{2}...X_{n}|A)}{P(X_{1},X_{2}...,X_{n})}      $
+
+\paragraph{Bayes Rule (Extended Form (Total Probability))}
+$\frac{P(A) \cdot \prod_{i=1}^{n} P(X_{1}|A)}{P(A) \cdot \prod_{i=1}^{n} P(X_{i}|A)+P(\not A) \cdot \prod_{i=1}^{n} P(X_{i}|\not A)}$ \\
+
+
+\section{Quick Notes}
+\subsection{Sliding Blocks Puzzle}
+H1 = number of misplaced blocks
+H2 = sum of distances of blocks
+
+a block can move from square A to B if A is adjacent to B. = H2
+A block can move from A to B = H1
+H = max(H1, H2)
+
+\subsection{Problem Solving}
+Works when env. is fully observable, domain is known, domain is discrete, domain is deterministic and domain is static.
+
+\subsection{Implementation (nodes)}
+data structure with four fields: state at end of path, action taken to get to end of path, total cost and parent (pointer to parent node.)
+
+Frontier and explored list both use the linked list (above)
+Frontier should use hashtable set or tree, as well as explored list.
+
+\subsection{Homework 1}
+
+
+\end{document}

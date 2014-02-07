@@ -1,0 +1,185 @@
+% NOTE: Edited \homeworkProblemName command to stop problem number from being in header.
+%\begin{homeworkProblem}[Exercise \#\arabic{homeworkProblemCounter}] % Custom section title
+
+\documentclass{article}
+
+\usepackage{fancyhdr} % Required for custom headers
+\usepackage{lastpage} % Required to determine the last page for the footer
+\usepackage{extramarks} % Required for headers and footers
+\usepackage{graphicx} % Required to insert images
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{tabularx}
+ 
+% Margins
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in 
+
+\linespread{1.1} % Line spacing
+
+% Set up the header and footer
+\pagestyle{fancy}
+\lhead{\hmwkAuthorName} % Top left header
+\chead{\hmwkClass\ (\hmwkClassInstructor\ \hmwkClassTime): \hmwkTitle} % Top center header
+\rhead{\firstxmark} % Top right header
+\lfoot{\lastxmark} % Bottom left footer
+\cfoot{} % Bottom center footer
+\rfoot{Page\ \thepage\ of\ \pageref{LastPage}} % Bottom right footer
+\renewcommand\headrulewidth{0.4pt} % Size of the header rule
+\renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+%----------------------------------------------------------------------------------------
+% OWN DOC STRUCTURE
+%----------------------------------------------------------------------------------------
+
+% \newcolumntype{b}{X}
+% \newcolumntype{s}{>{\hsize=.5\hsize}X}
+% \newcommand{\heading}[1]{\multicolumn{1}{c}{#1}}
+
+%----------------------------------------------------------------------------------------
+% DOCUMENT STRUCTURE COMMANDS
+% Skip this unless you know what you're doing
+%----------------------------------------------------------------------------------------
+
+% Header and footer for when a page split occurs within a problem environment
+\newcommand{\enterProblemHeader}[1]{
+\nobreak\extramarks{#1}{#1 continued on next page\ldots}\nobreak
+\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak
+}
+
+% Header and footer for when a page split occurs between problem environments
+\newcommand{\exitProblemHeader}[1]{
+\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak
+\nobreak\extramarks{#1}{}\nobreak
+}
+
+\setcounter{secnumdepth}{0} % Removes default section numbers
+\newcounter{homeworkProblemCounter} % Creates a counter to keep track of the number of problems
+
+\newcommand{\homeworkProblemName}{}
+\newenvironment{homeworkProblem}[1][Problem \arabic{homeworkProblemCounter}]{ % Makes a new environment called homeworkProblem which takes 1 argument (custom name) but the default is "Problem #"
+\stepcounter{homeworkProblemCounter} % Increase counter for number of problems
+\renewcommand{\homeworkProblemName}{#1} % Assign \homeworkProblemName the name of the problem
+\section{\homeworkProblemName} % Make a section in the document with the custom problem count
+% \enterProblemHeader{\homeworkProblemName} % Header and footer within the environment
+}{
+% \exitProblemHeader{\homeworkProblemName} % Header and footer after the environment
+}
+
+\newcommand{\problemAnswer}[1]{ % Defines the problem answer command with the content as the only argument
+\noindent\framebox[\columnwidth][c]{\begin{minipage}{0.98\columnwidth}#1\end{minipage}} % Makes the box around the problem answer and puts the content inside
+}
+
+\newcommand{\homeworkSectionName}{}
+\newenvironment{homeworkSection}[1]{ % New environment for sections within homework problems, takes 1 argument - the name of the section
+\renewcommand{\homeworkSectionName}{#1} % Assign \homeworkSectionName to the name of the section from the environment argument
+\subsection{\homeworkSectionName} % Make a subsection with the custom name of the subsection
+\enterProblemHeader{\homeworkProblemName\ [\homeworkSectionName]} % Header and footer within the environment
+}{
+\enterProblemHeader{\homeworkProblemName} % Header and footer after the environment
+}
+   
+%----------------------------------------------------------------------------------------
+% NAME AND CLASS SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\hmwkTitle}{Government Breakdown} % Assignment title
+\newcommand{\hmwkDueDate}{Monday,\ October\ 14,\ 2013} % Due date
+\newcommand{\hmwkClass}{HIST\ 108} % Course/class
+\newcommand{\hmwkClassTime}{11:00 am} % Class/lecture time
+\newcommand{\hmwkClassInstructor}{Campbell} % Teacher/lecturer
+\newcommand{\hmwkAuthorName}{Cameron Carroll} % Your name
+
+%----------------------------------------------------------------------------------------
+% TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title{
+\vspace{2in}
+\textmd{\textbf{Early American History}}\\
+\includegraphics[width=5cm]{cuyam_logo}\\
+\textmd{\textbf{\hmwkTitle}}\\
+\normalsize\vspace{0.1in}\small{Due\ on\ \hmwkDueDate}\\
+\vspace{0.1in}\large{\textit{\hmwkClassInstructor\ \hmwkClassTime}}
+\vspace{2in}
+}
+
+\author{\textbf{\hmwkAuthorName}}
+\date{} % Insert date here if you want it to appear below your name
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle
+\newpage
+
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+% Question 1
+%----------------------------------------------------------------------------------------
+
+
+\begin{homeworkProblem}[Federal Government (Washington D.C.)]
+  \problemAnswer{
+    \begin{tabularx}{450pt}{l| c c c}
+      \textbf{Branch} & Executive & Legislative & Judicial \\
+      \textbf{Building} & White House & Capitol Building & Supreme Court Building \\
+      \textbf{Represented By} & President \& Cabinet & Congress & Supreme Court Justices \\
+      \textbf{Term} & 4 years & (See Below) & Lifetime \\[0.5cm]
+      \hline\\
+    \end{tabularx}
+    \begin{tabularx}{450pt}{l| c c}
+      \textbf{House} & Senate & Assembly \\
+      \textbf{Represented By} & Senators, static with population & Representatives, proportional to population \\
+      \textbf{Term} & 6 years & 2 years\\
+    \end{tabularx}
+  }
+\end{homeworkProblem}
+
+\begin{homeworkProblem}[State Government (Sacramento)]
+  \problemAnswer{
+    \paragraph{} All states must uphold a `republican form' of government, but the three-branch system is not required. (All states, nevertheless, implement the three-branch system.) All states except Nebraska implement a bicameral legislature. In this bicameral legislature, the smaller, upper house is the Senate while the larger, lower house is the Assembly, House of Representatives or House of Delegates. \\[0.2cm]
+    \begin{tabularx}{450pt}{l| c c c}
+      \textbf{Branch} & Executive & Legislative & Judicial \\
+      \textbf{Represented By} & Governor \& Cabinet & Congress & Supreme Court Justices \\
+      \textbf{Term} & 4 years, two possible terms & (See Below) & 12 years \\[0.5cm]
+      \hline\\
+    \end{tabularx}
+    \begin{tabularx}{450pt}{l| c c}
+      \textbf{House} & Senate & Assembly \\
+      \textbf{Represented By} & Senators, 40 in California & Representatives, 80 in California \\
+      \textbf{Term} & \multicolumn{2}{c}{12 years total in either upper or lower house}\\
+    \end{tabularx}
+  }
+\end{homeworkProblem}
+
+\begin{homeworkProblem}[Local Government (County Level)]
+  \problemAnswer{
+    \paragraph{} Local government is divided into county and municipal levels. Local governments must be granted their powers by the state, whereas federal and state governments share power. \\[0.2cm]
+    \begin{tabularx}{450pt}{l| c c c}
+      \textbf{Branch} & Board of Supervisors & Elected Officers & Agencies \\
+      \textbf{Represented By} & Elected from Districts & Elected County-Wide & Various heads-of-department \\
+    \end{tabularx}
+  }
+\end{homeworkProblem}
+
+\begin{homeworkProblem}[Local Government (City Level)]
+  \problemAnswer{
+    \begin{tabularx}{450pt}{l| c c}
+      \textbf{Branch} & Executive & Legislative \\
+      \textbf{Represented By} & `Strong Mayor' & City Council \\
+      \textbf{Term} & \multicolumn{2}{c}{4 years, two possible consecutive terms}  \\[0.5cm]
+    \end{tabularx}
+  }
+\end{homeworkProblem}
+
+
+
+\end{document}
+

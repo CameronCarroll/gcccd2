@@ -1,0 +1,63 @@
+\documentclass[11pt,letterpaper]{report}
+\usepackage[pdftex]{graphicx}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\setlength{\topmargin}{-.7in}
+\setlength{\leftmargin}{-.7in}
+\setlength{\textheight}{9in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\textwidth}{6.25in}
+
+
+\begin{document}
+
+\input{./lab7_cover_sheet.tex}
+\pagebreak
+
+\section*{Summary}
+\paragraph{Part I:}
+\begin{tabular}{ | c | c | c | c |}
+\hline
+ & $C_{5}$ series & $C_{5}$ parallel & $C_{5}$ half size \\
+ \hline
+Measured value & 1.5 nF $\pm$ 0.1 nF & 4.9 nF $\pm$ 0.1 nF & 1.5 nF $\pm$ 0.1 nF \\
+Predicted value & 1.2 nF & 4.9 nF & 1.2 nF   \\
+
+\hline
+\end{tabular}
+
+\paragraph{Part II:}
+\begin{tabular}{ | c | c |}
+\hline
+Description & Dielectric Constant \\
+\hline
+2-page & 1.1 \\
+3-page & 1.3 \\
+4-page & 1.2 \\
+5-page & 1.3 \\
+10-page & 1.8 \\
+20-page & 3.0 \\
+\hline
+Average $\kappa$ & 1.6 $\pm$ 0.70\\
+
+\hline
+\end{tabular}
+
+
+\section*{Conclusions \& Analysis}
+\paragraph{Part I:}
+We created capacitors using tin foil and paper dielectric, measuring the capacitance in various configurations. The capacitors by themselves sported 2.4 and 2.5 $\pm$ 0.1 nF with plate areas of 0.033 $m^2$. The three other configurations we used were the two capacitors wired together in parallel and series, and a single capacitor with half the plate area. The series circuit, with 1.5 $\pm$ 0.1 nF capacitance, has a rightly lower value but not within error boundary. The parallel circuit was measured at exactly the calculated value of 4.9 nF $\pm$ 0.1 nF. The half-size capacitor, with measured and predicted values identical to that of series, also fails to fall within the boundary of uncertainty. (But has a lower capacitance associated with its lower area.)
+
+The values of uncertainty for area (height \& width) were claimed to be 0.2 cm, an overly-conservative range for a simple measurement. In contrast, the $\sigma$ value for capacitance was chosen to be only 0.1 nF, which was found to be too liberal given the difficulty in measurement.
+
+Inconsistent capacitor plates may have contributed to error: The aluminum foil was constantly sliding around, were prone to folding and bending while reconfiguring, and were somewhat challenging to line up ideally. In addition to the possible setup errors, the measurements were somewhat difficult to make precisely: The multimeter, as noted in the lecture, seemed to be calculating and becoming more sure of its answer as time progressed. Any movement in the raw wires being fed into the meter caused it to jump to a new neighborhood and start zeroing in on a new value. This made it very difficult to determine which data were valuable and which were trash. After bulking up the ends of the wires, though, so that they fit more snugly into the meter, we got less chaotic results. Time, however, did not permit us to revisit our earlier, less certain values. 
+
+\paragraph{Part II:}
+Our data for the dielectric constant demonstrates a systematic upward trend. The constant value for 2 pages, at 1.1, is only $\frac{1}{3}$ of a \emph{liberal} literature value for the dielectric constant of paper, which ranges from 3.0 - 3.7. The value at 20 pages, though, is 3.0, barely within an acceptable range. This value has significant uncertainly rooted in the micrometer's measurements, which gave great us great difficulty. As noted in the lecture, every micrometer was intentionally mangled: Ours had a "zero" value of 3 "ticks," or $\frac{3}{100}$ mm. There was also a great deal of ambiguity in terms of how and where to measure the paper: It's so thin that it became difficult to determine when the instrument was touching the paper, when the paper had decompressed from a nice stack, and how to create consistent measurements. Upon further reflection and re-reading the experiment instructions, which  suggests the endpoint where the paper can still slip out, we should have selected either the point at which the paper can slip \emph{at all,} or the point at which is can slip \emph{smoothly.} These are still somewhat ambiguous endpoints, but would have been a world more precise than the huge range through which the micrometer can compress paper.
+
+
+
+\vspace{1cm}
+
+
+\end{document}

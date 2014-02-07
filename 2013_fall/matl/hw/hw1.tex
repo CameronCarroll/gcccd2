@@ -1,0 +1,354 @@
+% Setup:
+% ------
+\documentclass[paper=a4, fontsize=12pt]{scrartcl} % A4 paper and 11pt font size
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+
+\usepackage{fourier}
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+\usepackage{graphicx}
+\usepackage{mhchem}
+\usepackage{tabularx}
+\usepackage{pbox}
+\usepackage{listings}
+\lstset{language=Matlab}
+\usepackage{caption}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{fullpage}
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[L]{} % Empty left footer
+\fancyfoot[C]{} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+
+{\renewcommand{\arraystretch}{1.2} %<- modify value to suit your needs
+
+% Title:
+% ------
+\begin{document}
+
+\input{./hw1_title.tex}
+\pagebreak
+
+%----------------------------------------------------------------------------------------
+% PROBLEM 1
+%----------------------------------------------------------------------------------------
+
+\section*{Question 1}
+
+Unit price of Al is 3.30 USD/lb. What will the minimum acceptable 100 ft Al elevator cable cost? (Ignoring safety factor)
+
+\subsection*{Problem Data}
+\begin{center}
+\begin{tabularx}{350pt}{X X X}
+\hline \\ [-1.5ex]
+Unit Cost & 3.30 USD per lb & (Given in problem)\\[1.5ex]
+\hline \\ [-1.5ex]
+Length & \pbox{15cm}{100 ft \\ 1200 in} & (Given in problem)\\[1.5ex]
+\hline \\ [-1.5ex]
+\pbox{15cm}{Tensile Strength Al \\ (Alloy 2024 T351)} & \pbox{15cm}{470 MPa \\ 68170 psi} & \pbox{15cm}{FundMatSciEng v3 \\ (Appendix B4)} \\[1.5ex]
+\hline \\ [-1.5ex]
+\pbox{15cm}{Density Al} & \pbox{15cm}{2.71 $g/cm^3$ \\ 0.0979 $lb/in^3$} & \pbox{15cm}{FundMatSciEng v3 \\ (Inside Front Cover)} \\ [1.5ex]
+\end{tabularx}
+\end{center}
+
+\HRule
+
+\subsection*{Part 1: Minimum acceptable diameter}
+
+\begin{lstlisting}[label=areas-loads,caption=Areas and Loads (Octave code)]
+diameters = [1/16 1/8 1/4 1/2 3/4 1]
+areas = pi / 4 .* diameters.^2
+TS = 6.8165 * 10^4;
+loads = TS .* areas
+\end{lstlisting}
+
+\begin{lstlisting}[label=areas-loads-results,caption=Results for Areas and Loads]
+diameters =
+
+      0.0625       0.125        0.25         0.5        0.75          1
+
+areas =
+
+    0.003068    0.012272    0.049087     0.19635     0.44179      0.7854
+
+loads =
+
+      209.13      836.51        3346       13384       30114       53537
+
+\end{lstlisting}
+
+\HRule
+
+\paragraph{} These results show that half inch diameter is sufficient with 13,000 lb possible load using alloy 2024 tempered aluminum cable. Calculations assume 5,000 lb breaking point and no safety factor.
+
+\subsection*{Part 2: Total Cable Cost}
+
+\begin{lstlisting}[label=cost,caption=Volume Weight \& Total Cost]
+diameter = 1/2;
+UC = 3.30;
+cable_length = 1200;
+density = 0.0979;
+area = pi * diameter^2 / 4
+volume = area * cable_length
+weight = density * volume
+cost = weight * UC
+\end{lstlisting}
+
+\HRule
+\paragraph{} This code produces the following results: \\
+\begin{tabularx}{250px}{X X}
+area & $0.196\ in^2$ \\
+volume & $235.6\ in^3$ \\
+weight & $23.1\ lb$ \\
+cost & \$76.1 \\
+\hline
+\end{tabularx}
+
+\paragraph{} The minimum viable diameter for an aluminum elevator cable is 1/2 inch, at a cost of \$76.
+\newpage
+
+%----------------------------------------------------------------------------------------
+% PROBLEM 2
+%----------------------------------------------------------------------------------------
+
+\section*{Question 2}
+
+Rank the 5 materials from the Elevator problem from best to worst in context of elevator problem. Include minium cable diameter, weight, and total cost. What criteria was applied in determining `best' cable? What other criteria should be included?
+
+\subsection*{Problem Data}
+\begin{center}
+\begin{tabularx}{350pt}{X X X}
+\hline \\ [-1.5ex]
+$TS_{polyester}$ & $6000\ PSI$ & \pbox{20cm}{McGehee Lecture Notes \\ (Elevator Problem)}\\[1.5ex]
+\hline \\ [-1.5ex]
+$TS_{kevlar}$ & $525,000\ PSI$ & \pbox{20cm}{McGehee Lecture Notes \\ (Elevator Problem)}\\[1.5ex]
+\hline \\ [-1.5ex]
+$TS_{steel}$ & $76,000\ PSI$& \pbox{20cm}{McGehee Lecture Notes \\ (Elevator Problem)}\\[1.5ex]
+\hline \\ [-1.5ex]
+$TS_{aluminum}$ & $68,165\ PSI$ & \pbox{15cm}{FundMatSciEng v3 \\ (Appendix B4)} \\[1.5ex]
+\hline \\ [-1.5ex]
+$TS_{gold}$ & $18850\ PSI$ & \pbox{15cm}{FundMatSciEng v3 \\ (Appendix B4)} \\[1.5ex]
+\hline \\ [-1.5ex]
+$\rho_{kevlar}$ & $0.0520\ lb/in^3$ & \pbox{20cm}{McGehee Lecture Notes \\ (Elevator Problem)}\\[1.5ex]
+\hline \\ [-1.5ex]
+$\rho_{steel}$ & $0.283\ lb/in^3$  & \pbox{20cm}{McGehee Lecture Notes \\ (Elevator Problem)}\\[1.5ex]
+\hline \\ [-1.5ex]
+$\rho_{aluminum}$ & $0.0979\ lb/in^3$ & \pbox{15cm}{FundMatSciEng v3 \\ (Inside Front Cover)} \\ [1.5ex]
+\hline \\ [-1.5ex]
+$\rho_{gold}$ & $0.697\ lb/in^3$ & \pbox{20cm}{McGehee Lecture Notes \\ (Elevator Problem)}\\[1.5ex]
+\hline \\ [-1.5ex]
+$UC_{kevlar}$ & $44.3\ USD/lb$ & \pbox{20cm}{McGehee Lecture Notes \\ (Elevator Problem)}\\[1.5ex]
+\hline \\ [-1.5ex]
+$UC_{steel}$ & $0.23\ USD/lb$ & \pbox{20cm}{McGehee Lecture Notes \\ (Elevator Problem)}\\[1.5ex]
+\hline \\ [-1.5ex]
+$UC_{aluminum}$ & $3.30\ USD/lb$ & \pbox{20cm}{McGehee Materials HW \\ (Homework 1 Problem 1)}\\[1.5ex]
+\hline \\ [-1.5ex]
+$UC_{gold}$ & $13,800\ USD/lb$ & \pbox{20cm}{McGehee Lecture Notes \\ (Elevator Problem)}\\[1.5ex]
+\end{tabularx}
+\end{center}
+
+\HRule
+
+\subsection*{Part 1: Minimum Diameters}
+\begin{lstlisting}[caption=Calculating Loads across Materials]
+TS_poly = 6000;
+TS_kevlar = 525000;
+TS_steel = 76000;
+TS_al = 68165;
+TS_au = 18854;
+
+diameters = [1/16 1/8 1/4 1/2 3/4 1]
+areas = pi / 4 .* diameters.^2
+
+poly_loads = TS_poly .* areas
+kevlar_loads = TS_kevlar .* areas
+steel_loads = TS_steel .* areas
+al_loads = TS_al .* areas
+au_loads = TS_au .* areas
+\end{lstlisting}
+
+\begin{lstlisting}[caption=Results for Load Calculations]
+diameters =
+
+      0.0625       0.125        0.25         0.5        0.75          1
+
+poly_loads =
+
+      18.408      73.631      294.52      1178.1      2650.7      4712.4
+
+kevlar_loads =
+
+      1610.7      6442.7       25771  1.0308e+05  2.3194e+05  4.1233e+05
+
+steel_loads =
+
+      233.17      932.66      3730.6       14923       33576       59690
+
+al_loads =
+
+      209.13      836.51        3346       13384       30114       53537
+
+au_loads =
+
+      57.843      231.37      925.49        3702      8329.4       14808
+
+\end{lstlisting}
+
+\HRule
+\paragraph{} From this array of loads by possible cable diameters, we determine the following minima: \\[2ex]
+\begin{tabularx}{350pt}{X X X}
+Material & Diameter & Load \\
+\hline
+Kevlar & 1/8 in & 6440 lb \\
+Steel & 1/2 & 14900 \\
+Aluminum & 1/2 & 13400 \\
+Gold & 3/4 & 8300 \\
+\hline
+\end{tabularx}
+
+\subsection*{Part 2: Weight \& Unit Cost}
+\begin{lstlisting}[caption=Volume Weight \& Cost Calculations]
+cable_length = 1200;
+diameter_kevlar = 1/8;
+diameter_steel = 1/2;
+diameter_al = 1/2;
+diameter_au = 3/4;
+
+rho_kevlar = 0.0520;
+rho_steel = 0.283;
+rho_al = 0.0979;
+rho_au = 0.697;
+
+UC_kevlar = 44.3;
+UC_steel = 0.23;
+UC_al = 3.30;
+UC_au = 13800;
+
+volume_kevlar = pi / 4 * diameter_kevlar^2 * cable_length;
+volume_steel = pi / 4 * diameter_steel^2 * cable_length;
+volume_al = pi / 4 * diameter_al^2 * cable_length;
+volume_au = pi / 4 * diameter_au^2 * cable_length;
+
+weight_kevlar = rho_kevlar * volume_kevlar
+weight_steel = rho_steel * volume_steel
+weight_al = rho_al * volume_al
+weight_au = rho_au * volume_au
+
+cost_kevlar = UC_kevlar * weight_kevlar
+cost_steel = UC_steel * weight_steel
+cost_al = UC_al * weight_al
+cost_au = UC_au * weight_au
+\end{lstlisting}
+
+\paragraph{Resultant weights:} 
+\begin{tabularx}{250px}{X X}
+\hline
+Kevlar & 0.766 lb \\
+Steel & 66.7 \\
+Aluminum & 23.1 \\
+Gold & 369.5 \\
+\end{tabularx}
+
+\paragraph{Resultant costs:}
+\begin{tabularx}{250px}{X X}
+\hline
+Kevlar & \$33.9 \\
+Steel & \$15.3 \\
+Aluminum & \$76.1 \\
+Gold & \$5,099,200 \\
+\end{tabularx}
+
+\HRule
+\paragraph{} Of note are the extremely low weight of kevlar, the extremely high cost of gold and the cost/weight dichotomy between steel and aluminum. (Aluminum is expensive and light while steel is heavy and cheap.)
+
+\subsection*{Part 3: Ranking Materials}
+\paragraph{} The criteria used to rank materials from `best' to `worst' are weight and cost, and load capacity. Every material can satisfy the load capacity at some diameter except for polyester rope, which is eliminated entirely. Gold has a very high cost and weight and can be eliminated for all sane intents and purposes. \\
+The remaining choices are aluminum, steel and kevlar. I believe that there are two main sets of criteria for cables: Either you want the cheapest, strongest material available (in the case where you don't care about cable weight) or the lightest, strongest material (in the case where low weight has high value.) Steel is clearly the best choice for the former case, and kevlar the best choice for the latter case. Aluminum appears to be in the same category as kevlar: Light and strong... however due to the much lower tensile strength of kevlar compared to aluminum, the aluminum cable costs a lot more. \\
+Unless this elevator is to be installed in a weight sensitive environment, i.e: an aircraft, steel appears to be the best choice. 
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+% PROBLEM 3
+%----------------------------------------------------------------------------------------
+
+\section*{Question 3}
+
+Using data from following 3 figures, what is the least dense material having a tensile strength of 500 MPa or more, an fracture toughness of at least 30 $MPa\cdot m^{1/2}$? \\
+
+\paragraph{} Looking at figure 0.1 for tensile strength we can immediately eliminate all polymers (Below 500 MPa). Similarly by looking at figure 0.2, we can eliminate all ceramics and polymers (Below 30 $MPa\cdot m^{1/2}$). This leaves steel alloys, Cu/Ti alloys, CFRC or GFRC. The least dense of these, by figure 0.3, is CFRC (Carbon-fiber reinforced concrete.)
+
+\begin{figure}
+  \caption{Tensile Strength}
+  \centering
+    \includegraphics[width=0.7\textwidth]{hw1fig1.jpg}
+\end{figure}
+\begin{figure}
+  \caption{Fracture Resistance}
+  \centering
+    \includegraphics[width=0.7\textwidth]{hw1fig2.jpg}
+\end{figure}
+\begin{figure}
+  \caption{Density}
+  \centering
+    \includegraphics[width=0.7\textwidth]{hw1fig3.jpg}
+\end{figure}
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+% PROBLEM 4
+%----------------------------------------------------------------------------------------
+
+\section*{Question 4}
+What are the design limiting properties for the following?
+\begin{enumerate}
+  \item The blade of knife used to gut fish
+  \begin{enumerate}
+    \item Hardness: The knife shouldn't be maleable at all; It should hold its shape (And therefore its sharpness.)
+    \item Fracture Toughness: The knife shouldn't break into pieces if you drop it or chop with it.
+    \item Density: The knife should be a `good weight.'
+  \end{enumerate}
+
+  \item An oven mitt
+  \begin{enumerate}
+    \item Thermal conductivity: Should be as low as possible, to maximize the amount of time you can hold something hot.
+    \item Thermal expansion coefficient: Unlikely to be significant, but it would be terrible if it changed size while your hand was inside of it.
+  \end{enumerate}
+
+  \item A bicycle frame
+  \begin{enumerate}
+    \item Tensile Strength: Bikes often get lifted up, hung in the garage, or hung on a car/bus. The frame needs to be able to take some tension.
+    \item Hardness: Frame should be hard and not get dented.
+    \item Fracture Toughness: Frame definitely shouldn't be easily fractured... it should be able to survive a fall onto street or rocks.
+    \item Density: A lower density would give a lighter, more appealing and usable bike.
+    \item Thermal conductivity: Probably not very significant, but the frame shouldn't become too hot or cold to touch.
+    \item Thermal expansion coefficient: Should be low, so that the frame doesn't expand/contract and break parts of the bike.
+  \end{enumerate}
+\end{enumerate}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

@@ -1,0 +1,94 @@
+\documentclass[11pt]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage{hyperref}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\setlength{\topmargin}{-.7in}
+\setlength{\leftmargin}{-.7in}
+\setlength{\textheight}{9in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\textwidth}{6.25in}
+
+\begin{document}
+\input{./project_1_coversheet.tex}
+\pagebreak
+
+\section*{}
+
+\paragraph{}
+A ubiquitous part of our lives, the security and political balance of the internet is often taken for granted. A modern wonder sits poised atop a culture with a huge dichotomy in its users' technical aptitude. The average person works with an interface so far abstracted and so over-engineered that they are constantly at the mercy of anonymous programmers. The average person is working with a device which is filled with magic, fueled by magic, but produces more or less what they need. They follow security algorithms provided to them without knowledge of why certain components are even important at all. So, while the internet has assisted in globalization, it has evolved into an insecure conduit. Data is not safe from anyone: Malicious hackers, government agencies and businesses alike all want to collect as much as possible. Even without intending to, Google found themselves collecting wireless data while driving Street View cars.\cite{reuters_google_data}.
+
+\paragraph{}
+Globalization refers to the effects that the development of real-time communication have had on the world. The two most significant results of this development are web commerce and the sharing of ideas. A farmer from one side of the globe can purchase tools and seeds from someone on the other; Food is grown all over the world and often exported; Research, projects and ideas are usually posted and shared with the world. These resultant effects would not be as viable without a communication network as robust and autonomous as the internet. \\
+Specifically, the internet allows for essentially instant relay of messages with relatively little bureaucracy. Being able to send any message anywhere, at any time in ~100ms is an incredible prospect with new applications showing up all the time. One relatively recent application is the sharing of schematics for 3D printer objects; As the technologies improve and become cheaper, it will be economically viable to simple print certain items instead of having them manufactured elsewhere. There is even a Pirate Bay category\cite{pirate_bay_physibles} for schematics for physical items, which essentially allows an infinite number of people to share an object for the price of some plastic.
+
+\paragraph{}
+Bureaucracy and government control are as much a threat to Internet security as malicious hackers and crackers. The only way to restrict access is to go to the service providers, who have historically cooperated with LEOs and government officials. In San Francisco, for example, Room 641A\cite{wikip_room_641a} in an SBC communications building, is a secret room to which a small portion of the fiber light is diverted; The NSA operates this room and analyzes/records the traffic coming through. Because wireless technologies tend to be "last mile" solutions, there really isn't much of an alternative for Internet connectivity. Many think that the future is in ad-hoc wireless networks, but without the ISP backbone to carry the data over long distances or under oceans, this is really geographically limited. The ISPs and telecommunications companies own the tubes, and the governments can coerce their will upon them. 
+
+\paragraph{}
+In the world of computer security, nation-states play a prominent role. As Kenneth Geers, a cyber security researcher, notes... "...all political and military conflicts now have a cyber dimension, the size and impact of which are difficult to predict, and the battles fought in cyberspace can be more important than events taking place on the ground."\cite{geers_security} Huge suites of malware such as Flame\cite{kapersky_flame} and Stuxnet\cite{ars_technica_stuxnet} are nation-state level programs which are designed to attack industrial control systems and infiltrate infrastructure.
+
+\paragraph{}
+Although government cyber-terrorism and espionage are rampant, the underbelly of the Internet provides a similar avenue for individuals. Hackers, interested in exploiting systems, are in an eternal struggle with themselves; Black-hat hackers attempt to break into systems for nefarious reasons, whether it be to steal data, cause damage, or sell their technique. White-hat hackers attempt to break into systems to check their integrity, practice their skills or to find new exploits before a black-hat does. Both groups further computer science and architecture by pushing things beyond their limits... the only difference is that a sinister person will not publish the exploit to the world but rather use it as a "zero-day" attack or sell it to someone else. "Cracking," which is the art of breaking system security by brute force submission or comparison, was relatively less prominent until 2009. A social games company, whose website chose to store user passwords in cleartext, was hacked by SQL injection and bequeathed their wealth of passwords upon the world.\cite{imperva_password} These passwords provided real credentials rather than dictionary accumulations, making the act of password-hash comparisons against stolen encrypted data significantly more effective. Society stores ridiculous amounts of sensitive data under the assumption that their security systems won't be breached. Most of the recent web application security breaches fell to simple SQL injection, though, so it seems that poor application development is as much a threat to society as those that exploit it. \\
+Given the horrible password practices (see \cite{imperva_password},) re-use on multiple websites, and the poor security practices adopted by developers all too often, hundreds of millions of accounts are at risk. There have been a handful of huge breaches in the last few years yielding swaths of user data; A modern computer can check upwards of 4-5 billion hashes per second, on only commodity hardware, which makes cracking a low-entropy password hash a short ordeal.\cite{ars_technica_passwords} Networked security is \emph{not} getting stronger, but society continues to put more sensitive data online.
+
+
+
+
+\begin{thebibliography}{9}
+
+\bibitem{reuters_google_data}
+	Alexei Oreskovic,
+	"Google says mistakenly got wireless data." \\
+	Accessed on 11 September, 2012 \\
+	\url{http://www.reuters.com/article/2010/05/15/us-google-wifi-idUSTRE64D60E20100515}
+	
+\bibitem{pirate_bay_physibles}
+	The Pirate Bay,
+	"Physibles." (Torrent Download for Physical Items) \\
+	Accessed on 11 September, 2012 \\
+	\url{http://thepiratebay.se/browse/605}
+	
+\bibitem{wikip_room_641a}
+	Wikipedia,
+	"Room 641A." \\
+	Accessed on 11 September, 2012 \\
+	\url{http://en.wikipedia.org/wiki/Room_641A}
+	
+
+\bibitem{geers_security}
+	Kenneth Geers,
+	"Strategic Cyber Security."\\
+	Accessed on 11 September, 2012 \\
+	\url{https://media.defcon.org/dc-19/presentations/Geers/DEFCON-19-Geers-Strategic-Cyber-Security-WP.pdf}
+	
+\bibitem{kapersky_flame}
+	Aleks, Kapersky Labs,
+	"The Flame: Questions and Answers."\\
+	Accessed on 11 September, 2012 \\
+	\url{http://www.securelist.com/en/blog/208193522/The_Flame_Questions_and_Answers}
+	
+\bibitem{ars_technica_stuxnet}
+	Nate Anderson, Ars Technica,
+	"Confirmed: US and Israel created Stuxnet, lost control of it."\\
+	Accessed on 11 September, 2012 \\
+	\url{http://arstechnica.com/tech-policy/2012/06/confirmed-us-israel-created-stuxnet-lost-control-of-it/}
+	
+\bibitem{imperva_password}
+	The Imperva Application Defense Center,
+	"Consumer Password Worst Practices."\\
+	Accessed on 11 September, 2012 \\
+	\url{http://www.imperva.com/docs/WP_Consumer_Password_Worst_Practices.pdf}
+	
+\bibitem{ars_technica_passwords}
+	Dan Goodin, Ars Technica,
+	"Why passwords have never been weaker -- and crackers have never been stronger." \\
+	Accessed on 11 September, 2012 \\
+	\url{http://arstechnica.com/security/2012/08/passwords-under-assault/}
+	
+
+	
+
+\end{thebibliography}
+
+\end{document}

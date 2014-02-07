@@ -1,0 +1,87 @@
+\documentclass[11pt]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage{hyperref}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\setlength{\topmargin}{-.7in}
+\setlength{\leftmargin}{-.7in}
+\setlength{\textheight}{9in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\textwidth}{6.25in}
+
+\begin{document}
+\input{./osi_project_coversheet.tex}
+\pagebreak
+
+\section{OSI Model Questions}
+\subsection{Physical Layer}
+\paragraph{1.}
+Components such as hubs, modems, cables and connectors are considered entities belonging to the Physical Layer of the OSI model because they are concerned with the signals that represent digital information. They provide the service of moving a signal across a medium, but are not concerned with what that signal represents. These components form the base layer of the model and of any networking scheme, because they are the least abstract: The task of assigning meaning lies with the layers above, and there is no layer below. Furthermore, this layer has no concept of other nodes: Signals go onto the wire, and they come off of the wire.
+\paragraph{2.}
+Some other components that belong to the physical layer include wires, network cards, radio transceivers, USB connections, bluetooth connections, et cetera.
+
+\subsection{Data Link Layer}
+\paragraph{1.}
+Devices such as ethernet frames, layer 2 switches or bridges are considered entities of the Data Link layer because they are concerned with moving information between two points on a physical link. Ethernet frames are a specific kind of data link frame (from the Ethernet protocol) and is used to encapsulate a packet with some information regarding its destination on the physical link. Layer 2 switches and bridges are network-isolation and frame routing devices that work at the Data Link layer; That is, they work on frames and are only concerned with the next node on the physical link.
+\paragraph{2.}
+The Media Access Control sublayer and Logical Link Control sublayer make up the Data Link layer. The latter controls and coordinates which protocols are operating on top of the Data Link layer, while the former determines rights regarding accessing the physical layer. 
+
+\subsection{Network Layer}
+\paragraph{1.}
+IP Packets, routers and layer 3 switches belong to the Network layer of the OSI model. These components operate at a level that includes logical addressing on a network, which allows a node to refer to a node outside its own network. In comparison, the Data Link layer components are only aware of hardware addresses. Network Layer components attempt to move a message from a source to a destination regardless of physical links in the middle, using intermediate nodes as necessary.
+\paragraph{2.}
+There are two other notable protocols, although deprecated, which have been used for the Network layer: X.25 (European public data-protocol) and IPX (Internetwork packet exchange, Novell Netware's protocol derived from the Xerox Network System.) Packet forwarding refers to passing a message through some (or multiple) gateways so that it can be delivered to the correct host.
+
+\pagebreak
+
+\subsection{Transport Layer}
+\paragraph{1.}
+A TCP Message is an entity of the Transport layer because a TCP message provides ordered, reliable delivery of data from an application on one system to an application on another. The Transport layer is specifically concerned with transmitting a message between two specific applications.
+\paragraph{2.}
+Other examples of Transport layer entities include UDP datagrams, virtual circuits, SCTP (Stream control transmission protocol) and DCCP (Datagram congestion control protocol.)
+
+\subsection{Session Layer}
+\paragraph{1.}
+NetBIOS is an API which provides Session layer services by allowing two computers to connect for a 'conversation,' and detects and handles errors. The Session layer is concerned with allowing two processes on separate computers to have a 'conversation.' These conversations are often used for checkpointing and synchronization, but also is used in web conferencing where streams of video or audio must be synchronized.
+\paragraph{2.}
+SOCKS and RPC are seen in Unix programming/networking, while NetBIOS, PPTP and ZIP are mostly used in Novell, Windows or Apple environments respectively. 
+
+\subsection{Presentation Layer}
+\paragraph{1.}
+An ASCII file is really the ubiquitous example of the Presentation layer entity because it's the most common encoding format for text. Because computers store and operate on information in binary, various abstractions must be invented and applied to create meaning. ASCII is a standard that defines what a specific set of binary or hexadecimal characters means in terms of text characters. An ASCII file, then, is a long list of hex codes that is read in and displayed as text. Other file types simply provide a context and meaning for strings of bits.
+\paragraph{2.}
+Other entities and components of the Presentation layer are encryption/decryption and compression of the data, or encoding schemes such as EBCDIC, Graycode, et cetera.
+
+\subsection{Application Layer}
+\paragraph{1.}
+Some examples of Application-layer components are web browsers, virtual terminals, e-mail and file transfer protocols/clients, filestores, and newsgroups. Application layer components provide a service either to other applications, or to the user.
+\paragraph{2.}
+PuTTY for SSH/Telnet access; Google Chrome for FTP/HTTP/Email(POP) access; Samba for SMB connectivity, and VMWare Workstation virtualizes entire networks and the protocols running on them.
+
+
+\pagebreak
+
+\section{OSI Model Matrix}
+\begin{tabular}{| p{2cm} | p{3.5cm} | p{3.5cm} | p{2.5cm} | p{2.5cm} |}
+\hline
+OSI Model Layer & Description & Function & Protocol & Components \\
+\hline
+Application & Topmost, most abstract, least featured part of model & Provides services to other applications and to user & POP, USENET, FTP, HTTP, SMB & E-Mail, Newsgroups, Web, Filestores/File-Transfer \\
+\hline
+Presentation & Handles meaning \& encoding of data & Provides encryption/decryption, encoding, error-checking of data. & Telnet, X.25 PAD, AFP, LPP, NCP, NDR & Data conversion, code translation, compression, encryption \\
+\hline
+Session & Manages conversations between applications & Provides session and conversation management for applications on separate computers. & PPTP, SOCKS, ZIP, NetBIOS, H.245, ADSP, ASP, SCP & Authentication, session management, permissions, checkpointing and recovery \\
+\hline
+Transport & Coordinates messages between applications & Provides the service of communicating with another process on another computer in order to deliver a message & UDP, TCP, CUDP, DCCP, FCP, IL, RDP, SPX & Flow control, reliability, byte orientation, byte order, congestion avoidance \\
+\hline
+Network & Coordinates messages between logical addresses & Provides the service of of communication with another computer, addressed logically rather than by hardware address & IPv4/IPv6, IPsec, ICMP, DDP, RIP, IPX, RSMLT, DVMRP & Connectionless communication, logical host addressing, message forwarding \\
+\hline
+Data Link & Coordinate messages between hardware addresses & Provides the service of wrapping packets into a frame, which allows transmission to the next node on the physical link & Ethernet, LocalTalk, ATM, CDP, NDP, LAPD, 802.11, Token Ring & Frame synchronization, error control, QoS control, Vitual LANs, physical addressing \\
+\hline 
+Physical & Sends and reads messages to and from the wire & Provides the service of accessing physical medium and transmitting a signal to or from the rest of the network. Has no idea of destination or source. & DSL, ISDN, Ethernet (Physical layer,) V.92, USB, IRDA, SONET & Modulation, multiplexing, carrier sense, line coding, circuit switching \\
+\hline
+
+\end{tabular}
+
+
+\end{document}

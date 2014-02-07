@@ -1,0 +1,39 @@
+currently branches use windows xp desktops using older version of software. not compatible with new version
+14 regional sales offices, one warehouse one corporate office. (LA for warehouse/corporate)
+
+branches don't communicate amongst themselves
+
+eacn branch:
+1 manager, administrative assistant, oversees:
+	sales: 
+	2 salespeople	uses pr department, sapreadsheets, connectiont to corporate office, database, local client data is at branch
+	sometimes contracted outside sales force
+	sales desk, connection to warehouse to order stuff
+
+	accounting:
+	2 clers manage accounting system, use spreadsheet/accounting system
+
+	personnael:
+	one clerk maintinas records using database, but all records are held at corporate office. timesheets are transmitted up every friday using spreadsheet
+
+	administration:
+	ranch manager, adaministrative assistant, one intern
+
+
+
+considerations for ugprade:
+1. security (omg use a vpn)
+2. backup & control -> network OS
+3. application standardization, control -> netowkr OS
+4. offer website for purchases etc, collected data
+5. increased sharing but good security still
+
+
+so what you need to do:
+1. design an office plan
+2. Decide on components for network... they need a network OS, a way of networking everybody together into 1-2 CDs, a VPN to connect to corporate/warehouse
+3. Design topology, create diagram
+4. Figure out costs, create spreadsheet
+5. create proposal
+6. omg really is there enough time for this bullshit?
+	

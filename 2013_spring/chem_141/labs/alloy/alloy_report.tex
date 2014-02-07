@@ -1,0 +1,145 @@
+\documentclass[11pt,letterpaper]{report}
+\usepackage[pdftex]{graphicx}
+\usepackage[version=3]{mhchem}
+\usepackage{tabularx}
+\usepackage{latexsym}
+\usepackage{multirow}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\setlength{\topmargin}{-.7in}
+\setlength{\leftmargin}{-.7in}
+\setlength{\textheight}{9in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\textwidth}{6.25in}
+
+
+
+%\mbox{}\\
+%_{()}
+
+%\multicolumn{4}{|l|}{\ce{}} \\
+
+\begin{document} 
+
+\input{./alloy_coversheet}
+
+\section*{Procedure:}
+Lehman, J; Olmstead, T; Vance, D, et alia. (2011)
+Experiment 8: Analysis of a Two-Component Alloy
+Chemistry 141 Lab Manual (Edition 5.2) (Pages 65-69)
+
+\section*{Data, Calculations \& Results}
+
+\paragraph{Data Summary:}\mbox{}\\
+
+\begin{tabularx}{450pt}{|X | X | X |}
+\hline
+ & Trial 1 & Trial 2 \\
+\hline
+Original Sample Mass: & 1.116 g & 2.184 g \\
+\hline
+Mass Water Delivered: & 0.692 kg & 0.878 kg \\
+\hline
+Volume Water Delivered: (Or \ce{H2} Gas) & 0.692 L & 0.878 L \\
+\hline
+Bottle $\triangle$ Beaker  (Height): & 6.60 cm (favoring bottle) & 0.05 cm (favoring beaker) \\
+\hline
+Temperature of Water: & 21.3 $^\circ$C  or 294.3 K & 21.0$^\circ$C or 294 K\\
+\hline
+Temperature of Gas: & 19 $^\circ$C or 292 K & 20 $^\circ$C or 293 K \\
+\hline
+Atmospheric Pressure: & 739 mmHg & 739 mmHg \\
+\hline
+Vapor Pressure of Water: & 18.7 mmHg & 18.7 mmHg\\
+\hline
+\end{tabularx}
+
+
+\subsection*{Calculations (Trial 1)}
+\paragraph{Determining pressure of \ce{H2} gas:} \mbox{}\\[0.1cm]
+  
+\noindent When the water level in the bottle is higher than the bottle of the beaker, the gas pressure plus water column pressure upon the bottle are equal to the atmospheric pressure upon the beaker. \\[0.1cm]
+
+ \noindent $P_{atm} = P_{gas} + P_{\ce{H2O}}$ and $P_{\ce{H2O}} = [mm_{\ce{H2O}} / (mm_{\ce{H2O}} / mm_{\ce{Hg}})] = 66.0\  mm_{\ce{H2O}} / 13.6\  (mm_{\ce{H2O}} / mm_{\ce{Hg}})$ \\ [0.1cm]
+ $= 4.85\  mm_{\ce{Hg}}$\\[0.1cm]
+
+\noindent So then $P_{gas} = P_{atm} - P_{\ce{H2O}} = 739\  mm_{\ce{Hg}} - 4.85\ mm_{\ce{Hg}} = 734.1\ mm_{\ce{Hg}} $ But the gas pressure consists of both the hydrogen pressure and the water vapor pressure, which is $18.7 mm_{\ce{Hg}}.$ $P_{\ce{H2}} = P_{gas} - P_{\ce{H2O}\ vapor} = 734.1\ mm_{\ce{Hg}} - 18.7\ mm_{\ce{Hg}} = 715.4\ mm_{\ce{Hg}}$ \\
+
+\paragraph{Solving for mols of \ce{H2} gas:}\mbox{} \\[0.1cm]
+
+\noindent By the ideal gas law, $pressure\ \cdot\ volume = mols\ \cdot\ gas\ constant\ \cdot\ temperature$ \\[0.1cm]
+ so $n = \frac{p \cdot v}{R \cdot T} =
+\frac{715.4\ mm_{\ce{Hg}} \cdot 0.692\ L}{62.4\ \frac{L \cdot  mm_{\ce{Hg}}}{mol \cdot K} \cdot 292\ K} = 0.0272\ mols\ of\ \ce{H2}$
+
+\vfill
+
+\paragraph{Solving for percent composition:}\mbox{} \\[0.1cm]
+
+\noindent First we find two relationships between the amounts of aluminum and zinc:\\[0.15cm]
+
+\noindent $mol\ \ce{H2}\ from\ \ce{Al} + mol\ \ce{H2}\ from\ \ce{Zn} = total\ mol\ \ce{H2}$ \\
+$grams\ of\ \ce{Al} + grams\ of\ \ce{Zn} = sample\ mass$\\[0.3cm]
+
+\noindent In order to express these relationships in terms of two variables (masses of aluminum and zinc respectively) we can use stoichiometry on the first equation: \\[0.1cm]
+
+\noindent $g\ \ce{Al}(\frac{mol\ \ce{Al}}{27.00\ g\ \ce{Al}})(\frac{3\ mol\ \ce{H2}}{2\ mol\ \ce{Al}})
+ + g\ \ce{Zn}(\frac{mol\ \ce{Zn}}{65.38\ g\ \ce{Zn}})(\frac{mol\ \ce{H2}}{mol\ \ce{Zn}}) = total\ mols\ \ce{H2}$ \\[0.3cm]
+
+\noindent Expressing these relationships together in a matrix, we have \\
+
+\noindent $\begin{bmatrix}
+  \frac{1}{18}\ mass\ \ce{Al} & \frac{1}{65.38}\ mass\ \ce{Zn} &  0.0272\ mols \\
+  mass\ \ce{Al} & mass\ \ce{Zn} & 1.116\ g \\
+\end{bmatrix}$\\[0.3cm]
+
+\noindent Coercing this into reduced row echelon form, \\
+
+\noindent $\begin{bmatrix}
+  1 & 0 & 0.252\ g \\
+  0 & 1 & 0.864\ g \\
+\end{bmatrix}$\\[0.3cm]
+
+\noindent Or 0.252 g aluminum and 0.864 g zinc, giving 77.5\% zinc in the sample by mass.
+
+\section*{Calculations (Trial 2)}
+
+The second trial had beaker height slightly above bottle height, so the water head pressure has a reversed sign. All other reasoning is the same as the first trial. These calculations yielded 2.12 grams of Zinc in a 2.184 gram sample, giving  97.1\% composition by mass.
+
+\section*{Post-lab Questions}
+\begin{enumerate}
+\item \textsc{Why was it not necessary to discard and refill the generator flask with fresh 6M HCl for subsequent reactions? Show a calculation to demonstrate your reasoning.}\\
+ Because there's sufficient hydrogen in the generator flask to react with all the metal in the alloy. For approximately 3 grams of zinc, we have $\frac{1}{22}$ mols of zinc, and thus need $\frac{1}{11}$ mols of \ce{HCl}.  $\frac{1}{11}$ mols of \ce{HCl} is only 15 mL of acid, while the experiment called for 50-75 mL to be put into the reaction flask, leaving plenty of acid to react with the aluminum as well as for a second trial.
+\item \textsc{2. What problem might arise if the gas produced by the unknown sample was H2S or NH3?  (Note that the question is not what if these gases were evolved from your sample, but what if they were evolved from a different experiment designed to produce one of these gases.)}\\
+  There would be two unknown quantities (the hydrogen and the nitrogen/sulfur respectively) rather than only one for the given experiment.
+\item \textsc{3. Why is it not necessary to consider the amount of air that was in the generator flask at the start of the reaction?}\\
+  Because the system is allowed to equilibrate, negating any initial pressures in the generator flask or the rest of the system.
+\item \textsc{4. If there was a leak in the rubber tubing that allowed approximately 150mL of H2 to escape, how would it affect the relative amounts (\% values) that you calculated as the results? Show a calculation to justify your answer.  (Would the final result indicate a higher or lower percentage of zinc?)}\\
+If hydrogen escapes from the system, we find more zinc and less aluminum from the calculations:
+$n = \frac{p \cdot v}{R \cdot T} =
+\frac{715.4\ mm_{\ce{Hg}} \cdot 0.15\ L}{62.4\ \frac{L \cdot  mm_{\ce{Hg}}}{mol \cdot K} \cdot 292\ K} = 0.00589\ mols\ of\ \ce{H2}\ missing$\\
+$\begin{bmatrix}
+  \frac{1}{18}\ mass\ \ce{Al} & \frac{1}{65.38}\ mass\ \ce{Zn} &  (0.0272-0.00589)\ mols \\
+  mass\ \ce{Al} & mass\ \ce{Zn} & 1.116\ g \\
+\end{bmatrix}$\\[0.3cm]
+\\
+$\begin{bmatrix}
+  g\ aluminum & 0 & 0.105\ g \\
+  0 & g\ zinc & 1.01\ g \\
+\end{bmatrix}$\\[0.3cm]
+\item \textsc{5. What assumptions do we make regarding the temperature of the generator flask?  (i.e. Are the generator and collection flasks equilibrated?)  Are they valid?}\\
+The temperature of the generator flask rises as a side-effect of the reaction. It produces a considerable amount of heat (very warm but not too warm to touch) while the collection flask is filled with tap water and as such is very cool. We allowed some time for the generator flask to cool down and for the system to become equilibrated, but I wouldn't say that it's perfect. They are, however, \emph{valid enough.}\\
+\item \textsc{6. How would the calculated number of moles of H2 collected change if the generator flask and collection flask were not given time to fully equilibrate?}\\
+Well, pressure increases with temperature so I would expect that the generator flask would have decreasing pressure as equilibration takes place. If not given enough time, the water levels would have an incorrect difference, the head pressure would be incorrect, and the pressure would either end up too high or too low, throwing off the mol and \% composition calculations.
+
+
+\end{enumerate}
+
+\section*{Discussion}
+The data for the first experiment appears to be pretty good, close to the real value of 76.8\%, but the second trial is off considerably. This could be due to throwing the rest of my sample in at the same time at once and doing multiple chunks, including little scrap bits that were still attached to the alloy. Perhaps the alloy wasn't evenly distributed throughout the chunks, but I don't think it could have been 97\%.
+
+\section*{Conclusion}
+By trial 1, 22.5\% aluminum and 77.5\% zinc.\\
+By trial 2, 2.9\% aluminum and 97.1\% zinc.\\
+By real value (from excel internal calculations page), 23.2\% aluminum and 76.8\% zinc
+
+\end{document}

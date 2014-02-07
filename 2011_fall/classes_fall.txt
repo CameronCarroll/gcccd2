@@ -1,0 +1,10 @@
+math 180 3502 11-1150am mw, 11am-1215pm tth
+
+chem 141 8803 2-315 pm mw, 330-450 wed lab
+
+engl 124 3058 2-315 pm tth
+
+
+
+engr 100 8082 6om-850pm tuesday
+
