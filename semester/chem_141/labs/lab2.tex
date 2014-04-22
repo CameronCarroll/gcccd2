@@ -1,0 +1,101 @@
+% Grossmont College -- Chem 141 Lab 2: Conductivity and Net Ionic Equation
+% Cameron Carroll
+% February 2014
+
+
+\documentclass[fleqn,titlepage]{article}
+
+\renewcommand*\rmdefault{ppl}
+
+\usepackage[version=3]{mhchem} % Package for chemical equation typesetting
+\usepackage{tabu}
+\usepackage{wasysym}
+\usepackage{listings}
+\usepackage{scrextend}
+\lstset{language=Matlab}
+
+% set 1" margins on 8.5" x 11" paper
+% top left is measured from 1", 1"
+\topmargin 0in
+\oddsidemargin 0in
+\evensidemargin 0in
+\headheight 0in
+\headsep 0in
+\topskip 0in
+\textheight 9in
+\textwidth 6.5in
+
+\usepackage{graphicx} % Required for the inclusion of images
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} % Make numbering in the enumerate environment by letter rather than number (e.g. section 6)
+
+%\usepackage{times} % Uncomment to use the Times New Roman font
+
+%----------------------------------------------------------------------------------------
+% DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{titlepage}
+  \mbox{}\\[1.25cm]
+  \textbf{\LARGE Cameron Carroll \\ Grossmont College}\\[2.25cm]
+  \begin{center}
+    \textbf{\huge Experiment 2: \\ Conductivity and Net Ionic Equations}\\[2.50cm]
+  \end{center}
+  \textbf{\LARGE Professor: Martin Larter \\ Chemistry 141-0692} \\
+  \vfill
+  \center{\textbf{\LARGE Performed --} {\LARGE February 6 \& 11, 2014}}
+  \center{\textbf{\LARGE Submitted --} {\LARGE March 4, 2014}}
+\end{titlepage}
+
+%----------------------------------------------------------------------------------------
+% SECTION 1
+%----------------------------------------------------------------------------------------
+\section*{Objective}
+  \paragraph{} The goals of this experiment include determining the type of bonding of a substance based on observations of its conductivity. Also we observe how conductivity changes with the addition of a solvent, both with polar and nonpolar solutes. We then try to find a correlation between conductivity and reaction rate. Finally, we observe how conductivity changes as a reaction proceeds.
+
+
+%----------------------------------------------------------------------------------------
+% SECTION 2
+%----------------------------------------------------------------------------------------
+\section*{Introduction}
+  \paragraph{} There are three main bond types which we look at in this experiment. These are ionic and covalent, with the latter split into polar and nonpolar. Ionic bonds are between a nonmetal and metal and is characterized by a cation and anion, which can break apart in solution. Covalent bonds are between two nonmetals and are characterized by electron sharing rather than transfer, These molecules can be either polar, with a concentration of charge at some point relative to the rest, or nonpolar. Polar covalent can dissolve partially in solution, while nonpolar will remain as a complete molecule.
+
+  \paragraph{} A nonelectrolyte is a substance which does not have any mobile ions and cannot conduct electricity (is a nonconductor). Because nonpolar covalent molecules are intact in solution, they will be nonelectrolytes. Some ionic substances will not dissolve and are also nonelectrolytic.
+  Strong electrolytes, on the other hand, are substances which break apart into ions and therefore \emph{do} conduct electricity. These ions become surrounded by a cage of water molecules, a process termed hydration. Ionic compounds, if soluble, are strong electrolytes and therefore good conductors.
+  \paragraph{} In between these two extremes are weak electrolytes, which only dissociate partially and therefore conduct electricity but not as well (these are poor conductors.) Dissociation is the process by which a substance breaks down into its constituent parts, for example acetic acid which remains mostly as a molecule and partially as \ce{H+} \& \ce{C2H3O2-}. A strong electrolyte dissociates more fully.
+
+%----------------------------------------------------------------------------------------
+% SECTION 3
+%----------------------------------------------------------------------------------------
+\section*{Procedure}
+\begin{itemize}
+  \item  \textbf{Referenced From:} \\
+    \begin{addmargin}[1em]{1em}
+      Lehman, J. (Et al), `Conductivity and Net Ionic Equations' \\
+      Grossmont College, Chemistry 141 Lab Manual, 6th edition, pp 27-40 \\
+      El Cajon, California
+    \end{addmargin}
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+% SECTION 4
+%----------------------------------------------------------------------------------------
+\section*{Discussion}
+  \paragraph{} Well, a variety of sizes of beakers were used. Ideally it would have been all 50mL containers but instead was a mix of 50, 100, and 150 mL. In addition, I didn't really set a volume to fill to every time even within a single size of beaker, leading to probable error in relative brightness between samples due to different amounts of solution and surface area. More surface area would give a brighter result, and even dipping the electrode from the top of the solution to the bottom often yields a visible change in current passed. This means that a large solution of a poor conductor might be mistaken for a strong one, or a small amount of strong mistaken for a poor or nonconductor entirely.
+  \paragraph{} Also, when testing the conductivity of the molten \ce{KClO3}, I believe it solidified too quickly to give an accurate representation of its conductivity. I observed only poor conductivity and expected it to be very good.
+  \paragraph{} Finally, when doing the titrations of \ce{CH3CO2H} with \ce{NH3} and \ce{HCl} with \ce{NaOH}, I don't think I took enough data... I sampled the components separately, partially tritrated at some arbitrary point, fully titrated and with excess. My observations, though, don't really give a clear picture of what happened during the partial titration stage. It was also difficult to judge relative brightness between further titration.
+, 
+%----------------------------------------------------------------------------------------
+% SECTION 6
+%----------------------------------------------------------------------------------------
+\section*{Conclusion}
+  \paragraph{} Well, based on the conductivity of the substance we can make some conclusions about its bonding... strong conductors are likely to be ionic compounds in solution. Nonconductors are either nonpolar covalent or crystalline ionics. Weak electrolytes are likely weak acids or bases, only dissociating partially.
+  \paragraph{} Then we saw that conductivity can change with the addition of a solvent: \ce{HCl}, an ionic compound was mixed into nonpolar hexane and didn't conduct electricity. When some DI water was added, however, the HCl was pulled apart by the polar water molecules and so the aqueous layer was able to conduct electricity.
+  \paragraph{} Next we found that conductivity appears to be correlated to reaction rate: Highly conductive \ce{HCl} had lots of \ce{H+} ions with which to react with the metals, while less conductive \ce{C2H3O2H} had fewer \ce{H+} ions and a slower reaction rate.
+  \paragraph{} Finally, we observed how conductivity changes with reaction progress. In one case, \ce{CH3CO2H} and \ce{NH3} were poor conductors separately, but combined to form a strong electrolyte. We also saw that \ce{H2SO4} and \ce{BaSO4} combine to form a \ce{H2O} and \ce{BaSO4}, a precipitate. Right at the titration endpoint, this solution doesn't conduct at all.
+
+\end{document}
