@@ -1,0 +1,103 @@
+i. draw civilization thing on the board
+ii. draw well and strata on another board
+
+1. civilization analogy
+  aztecs vs spanish
+  pablo picasso, cultural victory
+  fracking -> sick and dissident
+  (TALK ABOUT SLIDE: fracking_at_night)
+  (NEXT SLIDE: energy_projection)
+2. reason to listen
+  natural gas facts:
+    1. projected to displace coal in power generation market with 35% share by 2040
+    2. pollutes less than oil or coal when burned at power plant
+    3. bridge fuel
+    4. large portion of US energy supply (TALK ABOUT SLIDE)
+  fracking facts:
+    1. America poised to displace Saudi Arabia as top producer of oil.
+    2. fracking brings us natural gas (and tight oil).
+3. credibility
+  1. time spent on
+    a. trade journals
+    b. academic journals
+    c. think-tank and government agency documents
+  2. considering pursuing chemical engineering
+4. thesis
+  a. thesis: role and consequences
+  b. the plan:
+    1. process and purpose
+    2. environmental concerns
+    3. economic role
+(SWITCH TO NEXT SLIDE: shale_closeup)
+body questions:
+  1. What is hydrofracking?
+  2. Why is it necessary?
+  3. What are the dangers?
+  4. What are the advantages?
+5. geology
+  1. Shales: Ancient Devonian rock with organic material entombed, which turned into methane and ended up mostly in small natural fractures within the rock.
+  (MENTION SLIDE: shale_closeup)
+  (SWITCH TO NEXT SLIDE: natural_fractures)
+  (TALK ABOUT SLIDE)
+  2. Not permeable, gas trap, requires stimulation
+6. process
+  1. history (stanolind and halliburton)
+  (SWITCH TO NEXT SLIDE: hydrofrac)
+  2. process:
+    1. drill a hole (now most likely horizontally)
+    2. case the well while drilling, pumping drilling mud, also pumping down concrete
+    3. vertical vs horizontal wells
+    4. charges fired in horizontal section
+    5. slurry mixed: water, sand, chemicals
+    6. injected at high pressure
+    7. fractures expand and are connected to well bore
+    8. sand as a proppant
+    9. flowback vs produced water
+      (20-40% recovery of fracking fluid)
+      TENORM in produced water
+    10. gas trucked away to pipeline or train
+    11. wastewater trucked away to treatment or deep-injection
+7. environmental impact
+  1. water use: A well in the US was fractured 30 times with a total volume of 2.25 million gallons.
+  2. Water supplies:
+    a. Elevated bromide levels found a mile downstream from a commercial treatment facility, which can be associated with liver, kidney and nervous problems.
+    b. 48 wells, 1 affected with wastewater or naturally occuring brine.
+    c. 20 percent had methane already in their wells
+  3. surface water:
+    a. open air pits, centralized impoundments (25 of em, 10 million gallons)
+    b. fracking wastes can be disposed of as road de-icer, dust supressant, road maintenance and on fields.
+    c. perhaps show the unlined pit video.
+  4. radioactivity
+    a. oil and gas also comes with NORM
+    b. brine in formations dissolves radium which accumulates in equipment
+    c. between 20 and 100 percent of facilities in all states reported TENORM.
+    d. Production processes generate 100 tons of scale per well with high radioactivity and 230,000 megatons overall of sludge with low-to-moderate radioactivity.
+    e. In order to control TENORM, metals are cleaned, filters placed in smelting stacks, sludges and scales disposed of, waters injected.
+  5. upward migration
+    basins in which black shales are located do not allow for rapid upward migration of fluid or brine over short timescales.
+  6. soil erosion
+    a. impacts on water resources
+    b. pollutants washed off pad
+    c. industry self regulation
+8. economic impact
+  1. Grown from 2% in 2000 to 37% in 2013 of US gas production.
+  2. Tight oil and shale gas support 1.7m, growing to 3m jobs by end of decade.
+  3. NG prices were linked to oil, became unlinked, fluctuated: 4 USD/MMBtu in 2009 and 3.30 USD/MMBTU in 2013.
+  4. Boon to industries:
+    a. Polyethylene producers have become some of the most cost-competitive in the world.
+    b. Tire companies
+    c. Rail companies: 10,000 per Q10, 97,000 first Q13
+  5. boom towns: "If you bring people in, there is no local housing, certainly no affordable housing... the rates are double or triple what the might be elsewhere."
+9. summary
+  1. well-stimulation, we need nat gas
+  2. clear dangers, others are FUD, too much rhetoric to tell really
+  3. unchallenged economic benefits trickling into rest of economy. foremost energy
+10. tie-back
+  1. not cool to compare real people to game
+  2. but sort of a reasonable analogy: just happy or angry or sick faces at the whim of a higher decision.
+  3. chalco will have to suffer
+11. why remember?
+  1. fracking is here to stay
+  2. only just getting research on it
+  3. lots of jobs in it.
+

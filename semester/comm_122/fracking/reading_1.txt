@@ -1,0 +1,307 @@
+Radionuclides in Fracking Wastewater
+Source: Environmental Health Perspectives
+(GCCCD Library Database)
+Author: Valerie Brown
+Date: February 1, 2014
+Gathered: March 14, 2014
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Data on how many pits or ponds (surface impoundments) is sparse, but according to the PA Dep. of EnvP, (PADEP), there are 25 centralized impoundments in Pa. These can be as large as a football field and hold at least 10 million gallons. Also, the number of smaller ponds is probably much higher.
+Radium is the only radionuclide used to assess pit safety; Although individual radionuclides were within regulatory limits, total beta radiation was more than 8 times the limit.
+Most wastewater is either treated and reused or deep-injected. A small fraction is still being treated and released to surface waters until treatment facility permits come up for renewal under more stringent standards.
+Concerns about NORM in the Marcellus have recently been focused on Pa surface waters where produced water was being send to commercial or public wastewater treatment plants and discharged. In April of 2011, PADEP made a voluntary request that all Marcellus fracking operations stop sending wastewater to treatment plants, which motivated most to begin reusing a major portion and using treatment plants equipped to handle its contaminants.
+A study by Duke University, led by geochemist Avner Vengosh, found a 90% reduction in radioactivity in the effluent passing through a commercial treatment facility. The radioactivity constituents most likely accumulated in the landfill-destined sludge.
+Furthermore, the study also identified a potential future burder for drinking water facilities downstream: Elevated bromide was found over a mile downstream from the plant. {See next reference}
+Fracking wastes may be disposed of by applying produced water as a road de-icer or dust supressant, using drilling cuttings in road maintenance, and spreading liquids or sluge on fields. (Pa allows road dust and ice control under a state permit, which doesn't set limits for radioactive constituents.)
+When the Mississippi Mineral Resources Institute mixed scale comprising radium and barite with typical soil samples, radium was solubilized from the barite, probably as a result of soil microbial activity. The authors wrote that this suggests that the landspreading means for scale disposal should be reviewed.
+
+Basic Information about Disinfection Byproducts in Drinking Water: Total Trihalomethanes, Haloacetic Acids, Bromate, and Chlorite
+Source: Environmental Protection Agency
+http://water.epa.gov/drink/contaminants/basicinformation/disinfectionbyproducts.cfm
+Date: December 13, 2013
+Gathered: March 14, 2014
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Most produced water contains bromide, which can combine with natural organic matter and chlorine disinfectants to form trihalomethanes, compounds associated with liver, kidney and nervous system problems. 
+
+
+Oil and Gas Production Wastes
+Source: Environmental Protection Agency
+http://www.epa.gov/radiation/tenorm/oilandgas.html
+Date: August 30, 2012
+Gathered: March 14, 2014
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Geologic formations which have oil and gas deposits also contain naturally occurring radionuclides, "NORM."
+(Uranium, Thorium, Radium, Lead-210)
+This is actually used as a method of finding deposits.
+Because the petroleum is created by decay of sea life, the deposits are often found in aquifers containing brine.  This brine ("Formation Water") is pumped to the surface along with oil and gas and is called "Produced Water." after separation.
+Radium, the decay product of uranium and thorium, may dissolve into the brine and remain in solution or form sludges or mineral scales, accumulating in tanks or inside pipes or equipment.
+Overall, 20 to 100 percent of facilities in every state reported some TENORM in their wastes.
+Produced water has lower radioactivity levels, but large volumes; Ratio is approximately 10 barrels of water to 1 of oil, and more than 18 billion barrels of waste fluids are generated annually in the US from oil and gas production.
+Produced waters are generally deep-injected or discharged into non-potable coastal waters.
+Scale is composed of insoluble barium, calcium, and strontium which precipitate out of the produced water due to T/P changes. Because Radium is chemically similar to these elements, it is incorporated into the scales.
+Concentrations of Ra-226 are generally higher than Ra-228.
+Scales are found inside of pipes and tubes. The highest concentration of radioactivity are found in the piping near the wellhead, which could be as high as tens of thousands of pCi/g.
+The largest volumes of scales were found in the water lines for separators, heater treaters, and gas dehydrators.
+Scale inhibitors may be applied, which causes TENORM to get passed on to produced waters.
+Each oil well in the US generates ~100 tons of scale annually. Average radium concentration has been estimated to be 480,000 pCi/kg, but has been found as high as 400 million pCi/kg.
+Oil production processes generate an estimated 230,000 MT of TENORM sluge annually, which is composed of precipitated silicas but also may contain lots of barium. Average radium concentration in sluges is estimated at 75000 pCi/kg, but this varies considerably. 
+Because soluges are more soluble, they pose a higher risk of exposure than do scales despite their lower radioactivity. Also, lead concentrations may be more than 27 million pCi/kg in sludges.
+TENORM contamination varied widely among region. Highest readings were found in northern Texas and gulf coast crescent (southern Louisiana to Florida.) Very low levels found in California, Utah, Wyoming, Colorado and northern Kansas.
+Previously, metals were recycled and smelted without being cleaned properly and wastes were either burned or placed in brine pits, where TENORM could accumulate in residual salts at the bottom.
+Now, metal is cleaned, filters are placed in smelting stacks to control airborne radiation release and metal is surveyed for radioactivity.
+Sludges with elevated TENORM are dewatered and held in storage tanks for disposal. Produced waters are deep-injected or discharged into coastal waters.
+Scale is sandblasted off of pipes and stored for disposal.
+Because TENORM contaminated wastes were not properaly recognized in the past, improper disposal may have resulted in contamination in and around production/disposal facilities. The previous surface disposal of wastes could lead to ground nad surface water contamination.
+Risks assessed for waste disposal workers includes direct gamma radiation exposure and RA dust inhalation, or inhalation of radon has released during drilling and produced by decay of radium, raising risk of lung cancer.
+
+
+TENORM Sources
+Source: Environmental Protection Agency
+http://www.epa.gov/radiation/tenorm/sources.html
+Date: February 4, 2014
+Gathered: April 14, 2014
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Average level of radium ranges from around 1 to 4 pCi/gram.
+Produced Water had a high of 9,000 pCi/g and the pipe scale peaked out over 100,000 pCi/g, which gives off around 4,000 particles per second per gram. This is 4 million Becquerel per kilogram.
+For comparison, the human body only sees about 7000 decays per second under normal conditions.
+
+Curies
+Source: Environmental Protection Agency
+http://www.epa.gov/radiation/glossary/curie.html
+Date: N/A
+Gathered: March 14, 2014
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The Curie is a measure of radioactivity based on the decay rate of a gram of radium. One curie of radioactive material wil have 37 billion atomic transformations (disintegations) per second.
+
+Constraints on upward migration of hydraulic fracturing fluid and brine.
+Source: Groundwater (Journal)
+Authors: S. Flewelling; M. Sharma
+FUNDED BY: Halliburton Energy Services, Inc.
+http://onlinelibrary.wiley.com/doi/10.1111/gwat.12095/abstract;jsessionid=D8EB484C21D1FD47FE4270BB98D38BCD.f03t01
+Date: January/February 2014
+Gathered: March 14, 2014
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The current body of literaure on the hydrology of sedimentary basins has established that fluids generally cannot migrate through the bedrock and rise up to the water table level. There have been some recent studies which suggest that there is indeed hydraulic communication between black shales and shallow aquifers in parts of the Marcellus region, and these may be conduits for brine and fluid migration. 
+The sedimentary basins in which black shales are located do not allow for rapid upward migration of HF fluid or brine over short timescales:
+Vertical permeability is dominated by the least permeable layer: Above black shales are regular shales, siltstones and mudstones. Many of these layers have low permeability, especially under high effective stress at depth and other factors.
+HF affects a relatively small thickness of bedrock. The pressures are short lived and localized to the fracture network, so fluid would have to traverse natural vertical head gradients.
+These natural head gradients do occur, either from topography or overpressure at depth. However flow rates are low, timescales for transport are long (10^6 years sometimes).
+In summary, where upward flow occurs, both permeability and flow rates are low and so transport timescales are long, and the rapid upward migration scenarios recently suggested (in 2012) are not physically plausible.
+
+What is hydrofracking?
+Source: The Institute for Energy & Environmental Research for Northeastern Pennsylvania
+Primary Author: Rachel Curtis
+http://energy.wilkes.edu/pages/156.asp
+Date: March 26, 2011
+Gathered: April 16, 2014
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Hydrofracking is a technique in which large amounts of water (mixed with chemicals and sand) under high pressure are used to open and connect existing fractures. When the pressure is released, the sand remains behind and props open the newly created fractures, allowing gas to flow more freely into the well.
+HF was frst used in Kansas in 1947 by the Stanolind Oil Company, which injected acid and oil down into a well to stimulate production. They obtained a patent and gave the Halliburton Oil Well Cementing Company exclusive rights to use the method. Halliburton added sand to the mixture when they began fracturing wells.
+Developments in pump technology since the 50's have allowed ever greater pressures and significantly higher concentrations of sand to be in the fracking fluid mixture. This allows more fractures are opened and more gas is released from the well.
+Most wells are fractured from eight to forty times during their lives.
+Some estimates claim HF allowed for more than a 90% increase in natural gas recovery compared to wells where it was not employed.
+
+Why is it necessary to fracture the rock?
+Source: The Institute for Energy & Environmental Research for Northeastern Pennsylvania
+http://energy.wilkes.edu/pages/186.asp
+Gathered: April 16, 2014
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Shale particles are very small and close packed, with gas trapped in the gaps between and also in natural fractures. These are not connected, however. When water is forced into the rock at very high pressure, it expands the existing fractures and connects them to the well bore, allowing the natural gas to be collected.
+
+How are gas wells drilled?
+Source: The Institute for Energy & Environmental Research for Northeastern Pennsylvania
+Primary Author: Rachel Curtis
+http://energy.wilkes.edu/pages/157.asp
+Date: January 14, 2011
+Gathered: April 16, 2014
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+In vertical drilling, a drill bit is placed at the end of sections of pipe. As the bit turns, it bores into the rock. 
+New segments of pipe are about 30 feet long and are added in end-to-end fashion. Each segment is called a joint, all joints along with bit is the drill string.
+As well is being drilled, cement is forced down the assembly, creating a protective sheath around the drill string.
+Drilling stops when they reach a pocked of gas -- The drill string is removed and a cap is placed overhead which captures the gas and diverts it to be processed. 
+
+Why does Marcellus contain gas?
+Source: The Institute for Energy & Environmental Research for Northeastern Pennsylvania
+Primary Author: Rachel Curtis
+http://energy.wilkes.edu/pages/149.asp
+Date: January 14, 2011
+Gathered: April 16, 2014
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Organic material which was not consumed by deep-dwelling creatures during the Devonian Period was entombed by the surrounding clay. Large amounts of this were incorporated into the layers of clay, forming Marecllus Shale, which has ~3% organic matter.
+Eventually this matter was turned into methane.
+The sediments which form the shale are packed very tightly together, leaving only tiny spaces for gas. Most of the natural gas molecules seeped into small natural fractures, or joints, present in Marcellus rock. Thus, efforts to extract methane focus on the fractures rather than dense rock itself.
+Some methane in the Shale was produced in layers beneath, which were more permeable and so the gas passed right through. The dense Marcellus Shale, however, has essentially trapped them.
+
+The Impact of Marcellus Gas Drilling on Rural Drinking Water Supplies
+Source: The Center for Rural Pennsylvania
+Authors: E. Boyer, B. Swistock, J. Clark, M. Madden, D. Rizzo, (Pennsylvania State University)
+http://www.rural.palegislature.us/documents/reports/Marcellus_and_drinking_water_2012.pdf
+Date: March 2012
+Gathered: April 16, 2014
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+* Research looked to provide an unbiased and large-scale study of water quality in private water wells in rural Pennsylvania before and after the drilling of nearby Marcellus Shale gas wells.
+* Focused on 48 private wells within 2500 feet of a well pad (phase 1), and another 185 water wells within about 5000 feet of a well pad. (Phase 2, which did not take any well samples before drilling began.)
+* 40% of the wells failed drinking water standard tests before any drilling began.
+* 20% of wells had methane before drilling began, although generally far below any advisory levels.
+* Out of 48 wells, only one was significantly affected by the drilling, with increases in bromide, chloride, sodium, barium, hardness, and more, suggesting possible mixing of well water with either waste fluids, flowback water, or naturally occuring brime.
+
+Soil Erosion and Surface Water Quality Impacts of Natural Gas 
+Development in East Texas, USA
+Source: Water (Journal)
+Authors: Matthew McBroom, Todd Thomas and Yanli Zhang
+(Pennsylvania State University)
+http://www.mdpi.com/2073-4441/4/4/944
+Date: November 2012
+Gathered: April 18, 2014
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+* Significant impacts on surface water resources were measured in this study when a gas well pad was constructed with little attention given to surface drainage patterns.
+* Site F1, constructed right in the middle of a stream, had a 13,972 kg ha-1 yr-1 sediment yield, versus 714 kg ha-1 yr-1 at F2, a site offset from a stream by 15 meters.
+* Since construction of gas well pads in Texas isn't regulated like other construction sites, the responsibility lies on industry to self-regulate. There's a precedent for effective industry self-regulation in Texas, however.
+* However, once stream channels are filled in and obliterated, remediative BMPs like silt fence and revegetation are 
+unlikely to have a significant effect in reducing erosion and minimizing aquatic habitat degradation. 
+The stormwater generated by even relatively small rain events washed pollutants directly off the pad 
+into the stream, with no opportunity for deposition and filtration.
+
+
+Risk and reward from the US fracking boom
+Source: International Railway Journal
+Authors: Kevin Smith
+(Found in GCCCD DB)
+Date: September 2013
+Gathered: April 20, 2014
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ * Moving oil to marketis difficult. Pipelines, the traditional method, aren't currently up to capacity required, and are expensive and problematic to build... Example: Keystone XL pipeline. (5.3bn USD, 830,000bopd, approval of which is delayed due to opposition.)
+ * Crude oil production will exceed pipeline capacity in the region until at least 2015, with current pipelines around 300,000 bopd short. As a result, oil companies have turned to rail to meet demand and get a better price for their product. (Despite the 10-15 USD cost by rail compared to 5 USD by pipeline.)
+ * The seven Class 1s transported around 10,000 carloads of crude in each quarter of 2010, but has grown to 27,000 by the end of 2011, 50,000 by the middle of 2012, and 97,000 in the first quarter of 2013.
+
+Boom goes the Bakken
+Source: Supply House Times
+(Found in GCCCD DB)
+Author: John McNally
+Date: July 2013
+Gathered: April 20, 2014
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+* Oval-shaped Bakken region is about 475 miles North to South and stretches 300 miles East to West.
+* “If you bring people in, there is no local housing, certainly no affordable housing,” he says. “The rates are double or triple what they might be elsewhere in the country just to get an apartment or a mobile home (due to the massive influx of workers in the area).”
+
+Are we over-fracturing horizontal shale wells? 
+Source: Business Source Elite
+Authors: Ali Daneshy
+(Found in GCCCD DB)
+Date: October 2013
+Gathered: April 20, 2014
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+* Fracturing practices vary widely between reservoirs, locations, and between companies within the same reservoir. Once a recipe is proven successful with a reasonable production outcome, it is accepted and small trial-and-error variations are explored.
+* For example, a well in the US was fractured 30 times with a total slurry volume of 2.25 million gallons, while two wells in Canada were fracked 25 and 5 times with 425,000 and 160,000 gallons respectively.
+* It can be argued from a technical point of view that the combination of wellbores and fractures in close proximity is excessive for efficient production. 
+* However the data aren't sufficient to make a financial case for 'over fracturing.' -- Most operators seem willing to accept the incremental cost of larger-size fractures to avoid the bigger financial risk of 'under fracturing.'
+* Example data from first case study:
+30 stages, each involving 75000 gal of slurry, each stage using 73,250 lb of proppant. a 9000 foot well was thus fractured in this way ever 310 feet. 
+
+Fracking Boost
+Source: Chemistry & Industry (Journal)
+Authors: Sarah Houlton
+(Found in GCCCD DB)
+Date: February 2013
+Gathered: April 20, 2014
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+* In 2000, shale gas represented 2% of the country's gas production. Now (Feb 2013) it is 37%
+* Tight oil and shale gas energy sources support more than 1.7m jobs, predicted to rise to 3m by the end of the decade.
+* While economic contributions are largely driven by activity in the 16 states where oil and gas is being produced, the impact is stretching coutnry-wide.
+* Ethane supply is projected to rise by 30% and the price of natural gas is projected to fall by 12-23% by 2020, compared with prices between 2000 and 2008.
+
+Frack yeah!
+Source: Canadian Plastics
+Authors: Mark Stephen
+(Found in GCCCD DB)
+Date: October 2012
+Gathered: April 20, 2014
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+* The fracking boom has increased natural gas supplies, lowered gas prices, and transformed North American producers of resins such as polyethylene, favored by lighter natural gas-based feedstocks, into some of the most cost-competitive producers in the world.
+* Fracking helps to reduce energy costs.
+* In Canada nd the US, it has helped stimulate major infrastructure investments in natural gas pipelines.
+* Fracking spurs economic growth by bringing industrial jobs back to North America which became scarce when natural gas was considered scarce.
+* Fracking reduces dependence on coal, which helps to improve air quality. Modern gas-fired power plants produced effectively no sulfur dioxide, fine particulates, mercury of toxic ash pollution, use less water and generate about half the CO2 of coal.
+
+Is fracking affecting natural gas prices?
+Source: Industrial Materials
+Authors: Emma Hughes
+(Found in GCCCD DB)
+Date: September 2013
+Gathered: April 20, 2014
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+* Before shales started producing significantly, the price of natural gas was closely linked to that of oil since they came from the same fields.
+* Between 2000 and 2009 NG prices fluctuated from spikes as high as 18.48 USD/MMBtu in Feb 2003, settling down to an average of 4 USD/MMBtu in 2009. Now, prices sit around 3.30 USD/MMBtu (Sept 2013)
+* Liquids such as propane and ethane are extracted as by-products and can be sold at much higher prices.
+
+Drilling for Dollars
+Source: Tire Business
+Authors: Kathy McCarron
+(Found in GCCCD DB)
+Date: April 2013
+Gathered: April 20, 2014
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+* Last year Wellborn Tire Group, a wholesaler in San Antonio, experienced 30-percent growth in sales and fracking contributed to at least half of that.
+
+Equipment Used in Fracturing
+Source: CalFrac Well Services
+Authors: Kathy McCarron
+(Found in GCCCD DB)
+Date: Copyright 2014
+Gathered: April 20, 2014
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Equipment involved...
+* Blender to combine chemicals, base fluid, and proppant
+* High-horsepower pumpers
+* A chemical additive unit, sometimes incorporated into blenders
+* A truck or trailer for high-pressure lines and manifolds
+* A control center to monitor and control the treatment.
+
+
+
+Annual Energy Outlook 2014 Early Release Overview
+Source: Energy Information Administration
+http://www.eia.gov/forecasts/aeo/er/executive_summary.cfm
+Date: December 16, 2013
+Gathered: April 20, 2014
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+* In 2040, NG is projected to hold 35% of generation share, while coal is projected to hold 32%.
+
+Fracking is turning the US into a bigger oil producer than Saudi Arabia
+Source: The Independent
+Authors: David Usborne
+http://www.independent.co.uk/news/world/americas/fracking-is-turning-the-us-into-a-bigger-oil-producer-than-saudi-arabia-9185133.html
+Date: March 11, 2014
+Gathered: April 20, 2014
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+* America is poised to displace Saudi Arabia as the world’s top producer.
+
+
+
+
+Natural Gas
+Source: EPA
+http://www.epa.gov/cleanenergy/energy-and-you/affect/natural-gas.html
+Date: September 2013
+Gathered: April 20, 2014
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+* The burning of natural gas at the power plant produces nitrogen oxides and CO2 in lower quantities than when burning coal or oil.
+
+Vast oil trove trapped in Monterey Shale formation
+Source: Los Angeles Times
+Author: Julie Cart
+http://articles.latimes.com/2014/apr/06/local/la-me-monterey-shale-20140407
+Date: April 2014
+Gathered: April 20, 2014
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+* federal Energy Information Administration estimated in 2011 that more than 15 billion barrels of recoverable oil is trapped in what's known as the Monterey Shale formation, which covers 1,750 square miles, roughly from Bakersfield to Fresno.
+
+What is flowback, and how does it differ from produced water?
+Source: The Institute for Energy & Environmental Research for Northeastern Pennsylvania
+Author: Eric Schramm
+http://energy.wilkes.edu/pages/205.asp
+Date: March 2011
+Gathered: April 20, 2014
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+* Flowback is fracking fluid which flows back to the surface in the weeks following injection, and has a dark murky appearance due to suspended particles.
+* Volume of recovery is between 20 and 40%, and the rest remains absorbed into the shale formation.
+* Produced water is naturally occuring water which flows to the surface throughout the entire lifespan of the well. 
