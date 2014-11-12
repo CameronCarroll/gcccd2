@@ -1,0 +1,93 @@
+\documentclass{article}
+
+% Set up double spacing
+\usepackage{setspace}
+\doublespacing
+
+\usepackage{hyperref}
+\usepackage[top=1in, bottom=1.5in]{geometry}
+\usepackage[ampersand]{easylist}
+
+% Not sure if this does anything?
+\raggedright
+
+% Set up subordination
+\renewcommand\thesection{\Roman{section}}
+\renewcommand\thesubsection{\Alph{subsection}}
+\renewcommand\thesubsubsection{\arabic{subsubsection}}
+\renewcommand\theparagraph{\alph{paragraph}}
+\renewcommand\thesubparagraph{\roman{subparagraph}}
+
+% Easylist Usage:
+% \begin{easylist}
+%   \ListProperties(Style*=,Numbers=l,FinalMark={)})
+%   \NewList
+%   & item
+% \end{easylist}
+
+% Environment for indented subsections:
+\newenvironment{subs}
+  {\adjustwidth{3em}{0pt}}
+  {\endadjustwidth}
+
+
+
+
+\title{That's not my Title.}
+\date{December, 2014}
+\author{Cameron Carroll\\ Grossmont College, Communication-122-1947}
+
+
+\begin{document}
+  \maketitle
+  \section*{}
+    \begin{description}
+      \item[General Purpose:] To persuade.
+      \item[Specific Purpose:] To persuade my audience to take action to safeguard themselves online.
+    \end{description}
+
+  \section{Attention Step}
+    \marginpar{\footnotesize{Attn Getter}}
+    \subsection{(Attention Getter))}
+    \marginpar{\footnotesize{Reason to Listen}}
+    \subsection{(Reason to Listen))}
+      \marginpar{\footnotesize{Speaker Credibility}}
+    \subsection{(Speaker Credibility)}
+    \marginpar{\footnotesize{Thesis \& Preview}}
+    \subsection{(Thesis)}
+
+  \section{Need Step}
+    \subsection{Statement of Need}
+    \subsection{Factual Illustration}
+    \subsection{Ramifications}
+    \subsection{Pointing}
+
+  \marginpar{\footnotesize{Transition}}
+  \paragraph{[Transition to Need Step]}
+
+  \section{Solution Step}
+    \subsection{Statement of Solution}
+    \subsection{Explanation of the Solution}
+    \subsection{Theoretical Demonstration}
+    \subsection{Practical Experience}
+    \subsection{Meeting Objections}
+
+  \marginpar{\footnotesize{Transition}}
+  \paragraph{[Transition to Visualization Step]}
+
+  \section{Visualization Step}
+    \subsection{Negative Visualization}
+    \subsection{Positive Visualization}
+
+  \section{Action Step}
+    \subsection{Summary \& Restatement of Main Points}
+    \subsection{Statement of Action}
+    \subsection{Statement of Personal Interest}
+    \subsection{Reason to Remember}
+
+
+  \newpage
+  \begin{center}{\Large \textbf References}
+  \end{center}
+  \paragraph{}  Argonne National Laboratory. (2013) Hydraulic Fracturing and Shale Gas Production: Technology, Impacts and Regulations. Retrieved from \url{http://www.afdc.energy.gov/uploads/publication/anl_hydraulic_fracturing.pdf}
+\end{document}
